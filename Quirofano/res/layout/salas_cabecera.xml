@@ -1,0 +1,32 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:weightSum="3"
+    android:background="#C0C0C0" >
+
+    <TextView
+        android:id="@+id/sala_name"
+		android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Sala" />
+    
+    <TextView
+        android:id="@+id/sala_activo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:text="Activo" />
+
+    <TextView
+        android:id="@+id/sala_bloqueado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:text="Bloqueado" />
+
+</TableRow>

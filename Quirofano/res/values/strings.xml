@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- OTRA ACTIVITY (MainActivity) -->
+    <string name="app_name">Quirófano</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_field">Usuario</string>
+    <string name="pass_field">Contraseña</string>
+    <string name="remember_cb">Recordarme</string>
+    <string name="enter_button">Entrar</string>
+	<string name="siga_hu">SIGA-HU</string>
+	<string name="siga_largo">Sistema Integral de Gestión Administrativa</string>
+	<string name="hospital">Hospital Universitario de la UANL</string>
+	<string name="derechos">SIGA-HU 2010. Todos los derechos reservados</string>
+	
+	<!-- OTRA ACTIVITY (OptionsActivity) -->
+	
+	<string name="options_string">OPCIONES</string>
+	<string name="home_button">Home</string>
+	<string name="q_central_button">Quirófano Central</string>
+	<string name="c_ambulatoria_button">C. ambulatoria</string>
+	<string name="traumatologia_button">Traumatología</string>
+	<string name="agendaGlobal_button">Agenda global</string>
+	<string name="contacto_button">Contacto</string>
+	<string name="pCirugia_button">Programar cirugía</string>
+	<string name="inspSalas_button">Inspeccionar salas</string>
+	
+	
+	<!-- OTRA ACTIVITY (HomeActivity)-->
+	
+	<string name="home_string">HOME</string>
+	<string name="procedimientos_string">Procedimientos en Quirófano</string>
+	<string name="agendaDia_string">Agenda del día </string>
+		
+		<!-- STRINGS DE LA TABLA -->
+		<string name="hora_string">Hora</string>
+		<string name="sala_string">Sala</string>
+		<string name="paciente_string">Paciente</string>
+		<string name="diagnostico_string">Diagnóstico</string>
+		
+	
+	<!-- OTRA ACTIVITY (QCentralActivity)-->
+	
+	<string name="qcentral_string">Programar cirugía</string>
+	
+	<!-- ITEM1 -->
+	
+	<string name="item_1">Item 1</string>	
+	<string name="item_2">Item 2</string>	
+	
+	<!-- 12 Noviembre -->
+	<string name="accion">Acción</string>
+	<string name="fech">Fecha</string>
+	
+	
+	
+</resources>

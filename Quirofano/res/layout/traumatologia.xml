@@ -1,0 +1,400 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#BFE6EE" >
+ 
+<TextView 
+	android:text="Traumatología"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" 
+	android:layout_gravity="center"
+	android:textSize="20sp"
+	android:layout_marginTop="10dp"/>    
+    
+<TabHost android:id="@android:id/tabhost"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_marginTop="5dp">
+      
+     <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+ 
+         <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" 
+                android:background="#FFFFFF"/>
+ 
+         <FrameLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@android:id/tabcontent" >
+                  
+             
+            <LinearLayout android:id="@+id/tab1"
+		    	android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" >
+		        
+                <TableLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:orientation="horizontal"
+		        android:stretchColumns="0,1,2,3" >
+		
+		        <TableRow
+		            android:layout_gravity="left"
+		            android:background="#C0C0C0" >
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/hora_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/sala_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/paciente_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/diagnostico_string" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="8:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="7" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sifuentes" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Tumor maligno" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="9:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="8" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Avendaño" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Apendicitis aguda" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="10:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="9" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Triana" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Apendicitis aguda" />
+		        </TableRow>
+		    	</TableLayout>
+                
+		    </LinearLayout>
+ 
+            <LinearLayout android:id="@+id/tab2"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" >
+         		
+ 
+                
+			</LinearLayout>
+ 
+    		<LinearLayout android:id="@+id/tab3"
+		    	android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" >
+ 
+	        	<TableLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:orientation="horizontal"
+		        android:stretchColumns="0,1,2,3" >
+		
+		        <TableRow
+		            android:layout_gravity="left"
+		            android:background="#C0C0C0" >
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/hora_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/sala_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/paciente_string" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="@string/diagnostico_string" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="8:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="7" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sifuentes" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Tumor maligno" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="9:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="8" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Avendaño" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Apendicitis aguda" />
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="10:00" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="9" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Triana" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Apendicitis aguda" />
+		        </TableRow>
+		    	</TableLayout>
+	        	
+ 			</LinearLayout>
+        	
+    		<LinearLayout android:id="@+id/tab4"
+		    	android:orientation="vertical"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" >
+ 
+		     	<TableLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:orientation="horizontal"
+		        android:stretchColumns="0,1,2" >
+		
+		        <TableRow
+		            android:layout_gravity="left"
+		            android:background="#C0C0C0" >
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sala" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Activo" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Bloqueado" />
+		
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sala 1" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sí" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="No" />
+	
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sala 2" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sí" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="No" />
+		
+		        </TableRow>
+		
+		        <TableRow>
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="Sala 4" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="No" />
+		
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="left"
+		                android:text="No" />
+
+		        </TableRow>
+		    	</TableLayout>
+            </LinearLayout>
+         </FrameLayout>
+    </LinearLayout>
+</TabHost>
+</LinearLayout>

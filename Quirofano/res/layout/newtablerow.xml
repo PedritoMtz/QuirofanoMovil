@@ -1,0 +1,53 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left" >
+    
+    <!-- android:background="#C0C0C0" -->
+    
+    <TextView
+        android:id="@+id/fech"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="20sp" 
+        android:text="@string/fech" />
+
+    <TextView
+        android:id="@+id/hora"
+		android:layout_width="wrap_content"
+		android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="20sp" 
+        android:text="@string/hora_string" />
+
+    <TextView	
+        android:id="@+id/sala"
+		android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="20sp" 
+        android:text="@string/sala_string" />
+
+    <TextView
+        android:id="@+id/pa"
+		android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="20sp" 
+        android:text="@string/paciente_string" />
+
+    <TextView
+        android:id="@+id/dg"
+		android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" 
+        android:layout_gravity="left"
+        android:text="@string/diagnostico_string" />
+
+</TableRow>

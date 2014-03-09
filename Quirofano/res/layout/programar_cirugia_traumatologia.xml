@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#BFE6EE"
+    android:layout_height="match_parent" >
+
+   	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <TextView 
+            android:id="@+id/qCentralString"
+			android:text="@string/qcentral_string"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:layout_alignParentTop="true"
+			android:layout_centerInParent="true"
+			android:textSize="20sp"
+			android:layout_marginTop="10dp"/>  
+			
+        <TextView
+            android:id="@+id/stringSala"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qCentralString"
+            android:text="Sala" />
+        
+        <!-- android:layout_marginRight="120dp" -->
+        
+        <TextView
+            android:id="@+id/stringFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignBaseline="@id/stringSala"
+            android:layout_centerHorizontal="true"
+            android:text="Fecha" />
+
+        <TextView
+            android:id="@+id/stringHoraPropuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/stringSala"
+			android:layout_alignParentRight="true"
+            android:text="Hora propuesta" />
+        
+        <Spinner
+            android:id="@+id/salaOpciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@+id/stringSala" />
+        
+         <EditText
+		     android:id="@+id/fecha"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_alignBaseline="@+id/salaOpciones"
+	         android:layout_centerHorizontal="true" /> 
+	    
+         <EditText
+		     android:id="@+id/horaPropuesta"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_alignBaseline="@+id/salaOpciones"
+	         android:layout_alignParentRight="true" />
+         
+         <!-- AHORA VIENEN 2 SPINNER: DURACION Y TIPO DE PROGRAMACION -->
+         
+         <TextView
+            android:id="@+id/stringDuracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/salaOpciones"
+            android:layout_marginTop="10dp"
+            android:text="Duración" />
+         
+         <TextView
+            android:id="@+id/stringTipoDeProgramacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignBaseline="@id/stringDuracion"
+            android:layout_centerHorizontal="true"
+            android:text="Tipo de programación" />
+          
+         <Spinner
+            android:id="@+id/duracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@+id/stringDuracion" />
+         
+         <Spinner
+            android:id="@+id/tipoDeProgramacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBaseline="@id/duracion" />
+         
+         <TextView
+             android:id="@+id/stringRegistro"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Registro"
+             android:layout_below="@+id/duracion" />
+         
+         <EditText
+		     android:id="@+id/registro"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@+id/stringRegistro" />
+         
+         <TextView
+             android:id="@+id/stringNombreDelPaciente"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Nombre del paciente"
+             android:layout_below="@+id/registro" />
+         
+         <EditText
+		     android:id="@+id/nombreDelPaciente"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@+id/stringNombreDelPaciente" />
+         
+         <TextView
+             android:id="@+id/stringEdad"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Edad"
+             android:layout_below="@+id/nombreDelPaciente" />
+         
+         <TextView
+             android:id="@+id/stringGenero"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Genero"
+             android:layout_alignBaseline="@id/stringEdad"
+             android:layout_centerHorizontal="true" />
+         
+         <TextView
+             android:id="@+id/stringProcedencia"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Procedencia"
+             android:layout_alignBaseline="@id/stringEdad"
+             android:layout_alignParentRight="true" />
+         
+         <EditText
+		     android:id="@+id/edad"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@+id/stringEdad" />
+         
+         <EditText
+		     android:id="@+id/genero"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_centerHorizontal="true"
+		     android:layout_alignBaseline="@+id/edad" />
+         
+         <EditText
+		     android:id="@+id/procedencia"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_alignParentRight="true" 
+		     android:layout_alignBaseline="@+id/edad" />
+         
+         <!-- AHORA VIENEN 1 SPINNER: spinner de servicio -->
+    
+    	 <TextView
+             android:id="@+id/stringServicio"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Servicio"
+             android:layout_below="@+id/edad" />
+    
+         <Spinner
+            android:id="@+id/servicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@id/stringServicio" />
+         
+         <TextView
+             android:id="@+id/stringDiagnostico"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Diagnóstico"
+             android:layout_below="@+id/servicio" />
+         
+         <EditText
+		     android:id="@+id/diagnostico"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringDiagnostico" />
+         
+         <TextView
+             android:id="@+id/stringProtocolo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Protocolo"
+             android:layout_below="@+id/diagnostico" />
+         
+         <TextView
+             android:id="@+id/stringReintervencion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Reintervención"
+             android:layout_below="@+id/groupProtocolo" />
+
+         <RadioGroup
+             android:id="@+id/groupProtocolo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/stringProtocolo"
+             android:orientation="horizontal">
+	         <RadioButton
+	             android:id="@+id/protocoloNo"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:checked="true"
+	             android:text="No" />
+        	<RadioButton
+	             android:id="@+id/protocoloSi"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="Sí" />
+         </RadioGroup>
+         
+         <RadioGroup
+             android:id="@+id/groupReintervencion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/stringReintervencion"
+             android:orientation="horizontal">
+	         <RadioButton
+	             android:id="@+id/reintervencionNo"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:checked="true"
+	             android:text="No" />
+        	<RadioButton
+	             android:id="@+id/reintervencionSi"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:text="Sí" />
+         </RadioGroup>
+         
+         <TextView
+             android:id="@+id/stringMedico"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Nombre del médico que programa"
+             android:layout_below="@+id/groupReintervencion" />
+         
+         <EditText
+		     android:id="@+id/medico"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringMedico" />
+         
+         <!-- AHORA VIENEN 1 SPINNER: spinner de "en atencion a" -->
+       	
+       	 <TextView
+             android:id="@+id/stringEnAtencionA"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="En atención a"
+             android:layout_below="@+id/medico" />
+       	
+         <Spinner
+            android:id="@+id/enAtencionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@id/stringEnAtencionA" />
+         
+         <TextView
+             android:id="@+id/stringProcedimientoOCirugia"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Procedimiento o cirugía planeado"
+             android:layout_below="@+id/enAtencionA" />
+         
+         <EditText
+		     android:id="@+id/procedimientoOCirugia"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringProcedimientoOCirugia" />
+         
+         <TextView
+             android:id="@+id/stringRegion"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Región"
+             android:layout_below="@+id/procedimientoOCirugia" />
+         
+         <TextView
+             android:id="@+id/stringDetallesAdicionales"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Detalles adicionales"
+             android:layout_alignBaseline="@+id/stringRegion" 
+             android:layout_centerHorizontal="true" />
+         
+         <!-- SPINNER PARA LA REGION -->
+         
+         <Spinner
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@id/stringRegion" />
+         
+         <EditText
+		     android:id="@+id/detallesAdicionales"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_alignBaseline="@id/region" 
+		     android:layout_centerHorizontal="true" />
+         
+         <TextView
+             android:id="@+id/stringServicio2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Servicio"
+             android:layout_below="@+id/region" />  
+             
+         <!-- SPINNER PARA SERVICIOS 2 -->
+         
+         <Spinner
+            android:id="@+id/servicio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:layout_below="@id/stringServicio2" />
+         
+         <CheckBox
+	      	android:id="@+id/eliminar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@id/servicio2"
+	        android:layout_alignParentRight="true"
+	        android:text="Eliminar"
+	        android:textSize="14sp" />
+         
+         <TextView
+             android:id="@+id/stringRiesgoQuirurgico"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Riesgo quirúrgico"
+             android:layout_below="@+id/servicio2" />
+         
+         <EditText
+		     android:id="@+id/riesgoQuirurgico"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringRiesgoQuirurgico" />
+         
+         <TextView
+             android:id="@+id/stringInsumosIndispensables"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Insumos indispensables"
+             android:layout_below="@+id/riesgoQuirurgico" />
+         
+         <EditText
+		     android:id="@+id/insumosIndispensables"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringInsumosIndispensables" />
+         
+         <TextView
+             android:id="@+id/stringRequerimientos"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Requerimientos de anestesiología"
+             android:layout_below="@+id/insumosIndispensables" />
+         
+         <EditText
+		     android:id="@+id/requerimientos"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringRequerimientos" />
+         
+         
+         
+         <TextView
+             android:id="@+id/stringHemoderivados"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Hemoderivados necesarios"
+             android:layout_below="@+id/requerimientos" />
+         
+         <EditText
+		     android:id="@+id/hemoderivados"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringHemoderivados" />
+         
+         <TextView
+             android:id="@+id/stringRequisitosDeLaboratorio"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Requisitos de laboratorio"
+             android:layout_below="@+id/hemoderivados" />
+         
+         <EditText
+		     android:id="@+id/requisitosDeLaboratorio"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringRequisitosDeLaboratorio" />
+         
+         <TextView
+             android:id="@+id/stringOtrasNecesidades"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Otras necesidades"
+             android:layout_below="@+id/requisitosDeLaboratorio" />
+         
+         <EditText
+		     android:id="@+id/otrasNecesidades"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="#55ffffff"
+		     android:ems="10"
+		     android:inputType="text"
+		     android:layout_below="@id/stringOtrasNecesidades" />
+         
+         <Button
+	            android:id="@+id/botonGuardar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:text="Guardar"
+	            android:layout_below="@id/otrasNecesidades"
+	            android:layout_marginTop="30dp"
+	            android:textSize="18sp" />
+         
+         
+    </RelativeLayout>
+        
+
+</ScrollView>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFE6EE"
+    android:orientation="vertical" >
+    
+    <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:text="@string/options_string"
+	android:textSize="28sp" />
+    
+    <Button
+    android:id="@+id/homeButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/home_button"
+	android:layout_gravity="center"/>
+    
+	<Button
+	android:id="@+id/qCentralButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/q_central_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/cAmbulatoriaButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/c_ambulatoria_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/traumatologiaButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/traumatologia_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/agendaGlobalButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/agendaGlobal_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/contactoButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/contacto_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/pCirugiaButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/pCirugia_button"
+	android:layout_gravity="center"/>
+	
+	<Button
+	android:id="@+id/inspSalasButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/inspSalas_button"
+	android:layout_gravity="center"/>
+    
+</LinearLayout>

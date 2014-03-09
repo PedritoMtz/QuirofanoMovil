@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="salas">
+		<item>Sala 1</item>
+		<item>Sala 2</item>
+		<item>Sala 3</item>
+		<item>Sala 4</item>
+		<item>Sala 5</item>
+	</string-array>
+	
+	<string-array name="duraciones">
+		<item>00:30:00</item>
+		<item>01:00:00</item>
+		<item>01:30:00</item>
+		<item>02:00:00</item>
+		<item>02:30:00</item>
+		<item>03:00:00</item>
+		<item>03:30:00</item>
+		<item>04:00:00</item>
+		<item>04:30:00</item>
+		<item>05:00:00</item>
+		<item>05:30:00</item>
+		<item>06:00:00</item>
+		<item>06:30:00</item>
+		<item>07:00:00</item>
+		<item>07:30:00</item>
+		<item>08:00:00</item>
+		<item>08:30:00</item>
+		<item>09:00:00</item>
+		<item>09:30:00</item>
+		<item>10:00:00</item>
+		<item>10:30:00</item>
+		<item>11:00:00</item>
+		<item>11:30:00</item>
+		<item>12:00:00</item>
+		<item>12:30:00</item>
+		<item>13:00:00</item>
+		<item>13:30:00</item>
+		<item>14:00:00</item>
+		<item>14:30:00</item>
+		<item>15:00:00</item>
+		<item>15:30:00</item>
+		<item>16:00:00</item>
+		<item>16:30:00</item>
+		<item>17:00:00</item>
+		<item>17:30:00</item>
+		<item>18:00:00</item>
+		<item>18:30:00</item>
+		<item>19:00:00</item>
+		<item>19:30:00</item>
+		<item>20:00:00</item>
+		<item>20:30:00</item>
+		<item>21:00:00</item>
+		<item>21:30:00</item>
+		<item>22:00:00</item>
+		<item>22:30:00</item>
+		<item>23:00:00</item>
+		<item>23:30:00</item>
+		<item>24:00:00</item>
+	</string-array>
+	
+	<string-array name="tiposDeProgramacion">
+		<item>Electiva hospitalizado</item>
+		<item>Electivos ambulatorios</item>
+		<item>Urgentes hospitalizados</item>
+		<item>Urgentes de departamento de urgencias</item>
+		<item>Urgente de consulta</item>
+	</string-array>
+	
+	<string-array name="servicios">
+		<item>General</item>
+		<item>Bla 1</item>
+		<item>Bla 2</item>
+		<item>Bla 3</item>
+		<item>Bla 4</item>
+	</string-array>
+	
+	<string-array name="atencionA">
+		<item>Jurídico</item>
+		<item>Pensionistas UANL</item>
+		<item>Seguro Popular</item>
+		<item>Particular</item>
+		<item>Municipio</item>
+		<item>Sala General</item>
+		<item>Especiales</item>
+		<item>Seguro de Gastos Médicos</item>
+	</string-array>
+	
+	<string-array name="listaRegion">
+		<item>Derecha</item>
+		<item>Izquierda</item>
+		<item>Bilateral</item>
+		<item>Única</item>
+	</string-array>
+	
+	<string-array name="servicios2">
+		<item>General</item>
+		<item>Bla 1</item>
+		<item>Bla 2</item>
+		<item>Bla 3</item>
+		<item>Bla 4</item>
+	</string-array>
+	
+	
+</resources>

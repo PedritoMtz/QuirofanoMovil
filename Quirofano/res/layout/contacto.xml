@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFE6EE"
+    android:orientation="vertical" >
+    
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" 
+    android:text="@string/siga_hu"
+	android:textSize="40sp"
+	android:layout_marginTop="10dp"
+	android:orientation="vertical" />
+	       
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:text="@string/siga_largo"
+	android:textSize="12sp"
+	android:orientation="vertical" />
+	       
+	<TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:text="@string/hospital"
+	android:textSize="12sp"
+	android:orientation="vertical" />
+    
+    <TextView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="Contacto"/>
+    
+    <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:layout_marginTop="10dp"
+	android:text="Francisco I. Madero, 3501 Mitras Centro"
+	android:textSize="12sp"
+	android:orientation="vertical" />
+    
+    <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:text="Monterrey, Nuevo León"
+	android:textSize="12sp"
+	android:orientation="vertical" />
+    
+    <TextView
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center" 
+	android:text="Tel: 01 81 8123 2663"
+	android:textSize="12sp"
+	android:orientation="vertical" />
+    
+    <TextView
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:text="@string/derechos"
+		    android:layout_marginTop="310dp"
+		    android:textSize="12sp" /> 
+    
+
+</LinearLayout>

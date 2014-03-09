@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:background="#BFE6EE"
+	android:layout_height="match_parent" 
+	android:orientation="vertical">
+	
+	
+	<TextView
+		android:id="@+id/titulo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="10dp"
+	    android:text="Acciones"
+	    android:textSize="20sp" />
+	
+	<TextView
+		android:id="@+id/nombre_paciente"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="10dp"
+	    android:text="Acciones"
+	    android:textSize="15sp" />
+	
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+		<!--  
+     	<Button
+       		android:id="@+id/po"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/login_selector"
+            android:text="Pre Operatorio" />
+            -->
+
+        <Button
+           	android:id="@+id/modificar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Modificar cirugía" />
+
+        <!--  
+        <Button
+           	android:id="@+id/iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Iniciar cirugía" />
+        -->
+            
+        <!--     
+        <Button
+         	android:id="@+id/diferir"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Diferir cirugía" />
+        --> 
+
+    	<Button
+        	android:id="@+id/cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancelar cirugía" />
+    </LinearLayout>
+	<!--  
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:background="#DCDCDC"
+		android:id="@+id/info"
+		android:layout_height="match_parent" 
+		android:orientation="vertical">
+	</LinearLayout>
+	-->  
+	<ScrollView
+            android:id="@+id/vista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    </ScrollView>
+	    
+</LinearLayout>

@@ -1,0 +1,112 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFE6EE" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+	    
+	    <TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center" 
+	    android:text="@string/siga_hu"
+		android:textSize="40sp"
+		android:layout_marginTop="10dp"
+		android:orientation="vertical" />
+		       
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" 
+		android:text="@string/siga_largo"
+		android:textSize="12sp"
+		android:orientation="vertical" />
+		       
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center" 
+		android:text="@string/hospital"
+		android:textSize="12sp"
+		android:orientation="vertical" />
+	       
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="60dp"
+		android:text="@string/app_name"
+		android:textSize="25sp" />
+		
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="30dp"
+		android:text="@string/user_field"
+		android:textSize="20sp" />
+		
+		<EditText
+		android:id="@+id/user"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center"
+		android:layout_height="wrap_content"
+		android:background="#55ffffff"
+		android:ems="10"
+		android:inputType="text"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp" >
+		</EditText>
+		
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:paddingTop="10dp"
+		android:text="@string/pass_field"
+		android:textSize="20sp" />
+		
+		<EditText
+		android:id="@+id/pass"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:background="#55ffffff"
+		android:ems="10"
+		android:inputType="textPassword"
+		android:paddingBottom="5dp"
+		android:paddingTop="5dp" >
+		</EditText>
+		
+		<CheckBox
+		android:id="@+id/rem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/remember_cb"
+		android:layout_marginTop="15dp"
+		android:textSize="18sp" />
+		
+		<Button
+		android:id="@+id/enterButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:paddingTop="10dp"
+		android:text="@string/enter_button"
+		android:layout_marginTop="5dp"
+		android:textSize="18sp" />
+		        
+		<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:text="@string/derechos"
+		android:layout_marginTop="180dp"
+		android:textSize="12sp" />  
+	    	    
+	</LinearLayout>
+</ScrollView>
