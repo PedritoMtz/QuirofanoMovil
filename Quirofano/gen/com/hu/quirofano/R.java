@@ -10,12 +10,23 @@ package com.hu.quirofano;
 public final class R {
     public static final class array {
         public static final int atencionA=0x7f0b0004;
+        public static final int clasificacion_cirugia=0x7f0b000c;
+        public static final int contaminacion=0x7f0b000e;
         public static final int duraciones=0x7f0b0001;
+        public static final int evento_adverso=0x7f0b000d;
+        public static final int infeccion=0x7f0b000f;
         public static final int listaRegion=0x7f0b0005;
         public static final int salas=0x7f0b0000;
         public static final int servicios=0x7f0b0003;
         public static final int servicios2=0x7f0b0006;
+        public static final int status1=0x7f0b0008;
+        public static final int status2=0x7f0b0009;
+        public static final int status3=0x7f0b000a;
+        /**  AGREGAR PERSONAL 
+         */
+        public static final int tipo_personal=0x7f0b0007;
         public static final int tiposDeProgramacion=0x7f0b0002;
+        public static final int turno=0x7f0b000b;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -806,10 +817,14 @@ containing a value of this type.
         public static final int abs__bright_foreground_disabled_holo_light=0x7f060005;
         public static final int abs__bright_foreground_holo_dark=0x7f060002;
         public static final int abs__bright_foreground_holo_light=0x7f060003;
-        public static final int abs__primary_text_disable_only_holo_dark=0x7f060006;
-        public static final int abs__primary_text_disable_only_holo_light=0x7f060007;
-        public static final int abs__primary_text_holo_dark=0x7f060008;
-        public static final int abs__primary_text_holo_light=0x7f060009;
+        public static final int abs__primary_text_disable_only_holo_dark=0x7f06000a;
+        public static final int abs__primary_text_disable_only_holo_light=0x7f06000b;
+        public static final int abs__primary_text_holo_dark=0x7f06000c;
+        public static final int abs__primary_text_holo_light=0x7f06000d;
+        public static final int atrazaada=0x7f060007;
+        public static final int diferido=0x7f060006;
+        public static final int realizada=0x7f060009;
+        public static final int transoperatorio=0x7f060008;
     }
     public static final class dimen {
         /**  Default height of an action bar. 
@@ -1036,7 +1051,11 @@ containing a value of this type.
         public static final int login_selector=0x7f020073;
         public static final int logo=0x7f020074;
         public static final int on_pressed=0x7f020075;
-        public static final int shadow=0x7f020076;
+        public static final int selector_atr=0x7f020076;
+        public static final int selector_dif=0x7f020077;
+        public static final int selector_rel=0x7f020078;
+        public static final int selector_trans=0x7f020079;
+        public static final int shadow=0x7f02007a;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f040025;
@@ -1078,184 +1097,189 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040018;
         public static final int abs__title=0x7f040020;
         public static final int abs__up=0x7f04000b;
-        public static final int action_settings=0x7f0400dc;
-        public static final int add_linear=0x7f0400aa;
-        public static final int agenda=0x7f0400ba;
-        public static final int agendaGlobalButton=0x7f040060;
-        public static final int agenda_del_dia=0x7f0400bd;
-        public static final int agregar=0x7f0400ab;
+        public static final int action_settings=0x7f0400e1;
+        public static final int add_linear=0x7f04008f;
+        public static final int agenda=0x7f0400bd;
+        public static final int agendaGlobalButton=0x7f040061;
+        public static final int agenda_del_dia=0x7f0400c1;
+        public static final int agregar=0x7f040090;
         public static final int agregarPersonal=0x7f04003f;
-        public static final int anestesiologo=0x7f0400cd;
-        public static final int anestesiologoSupervisa=0x7f0400cf;
-        public static final int botonGuardar=0x7f040058;
-        public static final int btnPre=0x7f04006f;
-        public static final int cAmbulatoriaButton=0x7f04005e;
+        public static final int anestesiologo=0x7f0400d2;
+        public static final int anestesiologoSupervisa=0x7f0400d4;
+        public static final int botonGuardar=0x7f040059;
+        public static final int btnPre=0x7f0400a4;
+        public static final int cAmbulatoriaButton=0x7f04005f;
         public static final int cancelar=0x7f04003c;
-        public static final int causaDiferido=0x7f04005b;
-        public static final int cd=0x7f0400bc;
-        public static final int circulante=0x7f0400d7;
-        public static final int cirujano=0x7f0400cb;
-        public static final int cirujanoString=0x7f0400ca;
-        public static final int clasificacion=0x7f040073;
-        public static final int complicaciones=0x7f040083;
-        public static final int contactoButton=0x7f040061;
-        public static final int contaminacion=0x7f04007d;
-        public static final int content_frame=0x7f040059;
-        public static final int destino=0x7f040075;
-        public static final int destinoDefuncion=0x7f040079;
-        public static final int destinoIntensivos=0x7f040077;
-        public static final int destinoRecuperacion=0x7f040076;
-        public static final int destinoSala=0x7f040078;
+        public static final int causa_diferido=0x7f04005c;
+        public static final int cc=0x7f0400c0;
+        public static final int cd=0x7f0400bf;
+        public static final int checkBoxLayout=0x7f0400b9;
+        public static final int circulante=0x7f0400dc;
+        public static final int cirujano=0x7f0400d0;
+        public static final int cirujanoString=0x7f0400cf;
+        public static final int clasificacion=0x7f0400a7;
+        public static final int complicaciones=0x7f0400b7;
+        public static final int contactoButton=0x7f040062;
+        public static final int contaminacion=0x7f0400b1;
+        public static final int content_frame=0x7f04005a;
+        public static final int destino=0x7f0400a9;
+        public static final int destinoDefuncion=0x7f0400ad;
+        public static final int destinoIntensivos=0x7f0400ab;
+        public static final int destinoRecuperacion=0x7f0400aa;
+        public static final int destinoSala=0x7f0400ac;
         public static final int detallesAdicionales=0x7f04004a;
-        public static final int dg=0x7f04006e;
-        public static final int diagnostico=0x7f04009d;
+        public static final int dg=0x7f0400a2;
+        public static final int diagnostico=0x7f040082;
         public static final int diferir=0x7f04003b;
         public static final int disableHome=0x7f040009;
-        public static final int duracion=0x7f04008d;
-        public static final int edad=0x7f040095;
+        public static final int displayDate=0x7f04006e;
+        public static final int duracion=0x7f040072;
+        public static final int edad=0x7f04007a;
         public static final int edit_query=0x7f04002b;
-        public static final int eliminar=0x7f04004d;
-        public static final int enAtencionA=0x7f0400a9;
+        public static final int eliminar=0x7f040091;
+        public static final int enAtencionA=0x7f04008e;
         public static final int enterButton=0x7f040043;
-        public static final int eventoAdverso=0x7f04007b;
-        public static final int eventosAnestesia=0x7f040081;
-        public static final int fech=0x7f04006a;
-        public static final int fecha=0x7f040089;
+        public static final int eventoAdverso=0x7f0400af;
+        public static final int eventosAnestesia=0x7f0400b5;
+        public static final int fech=0x7f04009e;
+        public static final int fecha=0x7f0400ba;
         public static final int finalizar=0x7f04003e;
-        public static final int frameLayout2=0x7f0400c3;
+        public static final int frameLayout2=0x7f0400c9;
         public static final int fullscreen=0x7f040013;
-        public static final int genero=0x7f040097;
-        public static final int groupProtocolo=0x7f04009f;
-        public static final int groupReintervencion=0x7f0400a3;
-        public static final int hemoderivados=0x7f0400b4;
+        public static final int genero=0x7f04007c;
+        public static final int groupProtocolo=0x7f040084;
+        public static final int groupReintervencion=0x7f040088;
+        public static final int hemoderivados=0x7f040099;
         public static final int homeAsUp=0x7f040006;
-        public static final int homeButton=0x7f04005c;
-        public static final int hora=0x7f04006b;
-        public static final int horaPropuesta=0x7f04008b;
-        public static final int infeccion=0x7f04007f;
+        public static final int homeButton=0x7f04005d;
+        public static final int hora=0x7f04009f;
+        public static final int horaPropuesta=0x7f0400bb;
+        public static final int hour=0x7f040070;
+        public static final int infeccion=0x7f0400b3;
         public static final int info=0x7f040068;
-        public static final int ingreso=0x7f0400c6;
         public static final int iniciar=0x7f04003a;
-        public static final int inspSalasButton=0x7f040063;
-        public static final int instrumentista=0x7f0400d3;
-        public static final int insumosIndispensables=0x7f0400b0;
+        public static final int inspSalasButton=0x7f040064;
+        public static final int instrumentista=0x7f0400d8;
+        public static final int insumosIndispensables=0x7f040095;
         public static final int left=0x7f040010;
         public static final int listMode=0x7f040002;
         public static final int listView1=0x7f040044;
         public static final int lista=0x7f040066;
         public static final int lista_quirofanos=0x7f040067;
         public static final int margin=0x7f040012;
-        public static final int medico=0x7f0400a7;
+        public static final int medico=0x7f04008c;
         public static final int menu_frame=0x7f040069;
         public static final int modificar=0x7f040039;
-        public static final int nombreDelPaciente=0x7f040093;
+        public static final int nombreDelPaciente=0x7f040078;
         public static final int nombrePersonal=0x7f040055;
+        public static final int nombre_Personal=0x7f0400c3;
         public static final int nombre_paciente=0x7f040038;
         public static final int normal=0x7f040001;
-        public static final int observaciones=0x7f0400db;
-        public static final int otrasNecesidades=0x7f0400b8;
-        public static final int pCirugiaButton=0x7f040062;
-        public static final int pa=0x7f04006d;
+        public static final int observaciones=0x7f0400e0;
+        public static final int otrasNecesidades=0x7f04009d;
+        public static final int pCirugiaButton=0x7f040063;
+        public static final int pa=0x7f0400a1;
         public static final int pass=0x7f040041;
-        public static final int pc=0x7f0400bb;
-        public static final int personal=0x7f040085;
-        public static final int procedencia=0x7f040099;
+        public static final int pc=0x7f0400be;
+        public static final int procedencia=0x7f04007e;
+        public static final int procedimiento=0x7f0400a3;
         public static final int procedimientoOCirugia=0x7f040046;
-        public static final int protocoloNo=0x7f0400a0;
-        public static final int protocoloSi=0x7f0400a1;
-        public static final int qCentralButton=0x7f04005d;
-        public static final int qCentralString=0x7f040052;
+        public static final int protocoloNo=0x7f040085;
+        public static final int protocoloSi=0x7f040086;
+        public static final int qCentralButton=0x7f04005e;
+        public static final int qCentralString=0x7f040051;
         public static final int region=0x7f040048;
-        public static final int registro=0x7f040091;
-        public static final int reintervencionNo=0x7f0400a4;
-        public static final int reintervencionSi=0x7f0400a5;
+        public static final int registro=0x7f040076;
+        public static final int reintervencionNo=0x7f040089;
+        public static final int reintervencionSi=0x7f04008a;
         public static final int rem=0x7f040042;
-        public static final int requerimientos=0x7f0400b2;
-        public static final int requisitosDeLaboratorio=0x7f0400b6;
-        public static final int riesgoQuirurgico=0x7f0400ae;
+        public static final int requerimientos=0x7f040097;
+        public static final int requisitosDeLaboratorio=0x7f04009b;
+        public static final int riesgoQuirurgico=0x7f040093;
         public static final int right=0x7f040011;
-        public static final int sala=0x7f04006c;
-        public static final int salaOpciones=0x7f040087;
-        public static final int sala_activo=0x7f0400c0;
-        public static final int sala_bloqueado=0x7f0400c1;
-        public static final int sala_name=0x7f0400bf;
-        public static final int salas=0x7f0400be;
-        public static final int salida=0x7f040071;
+        public static final int sala=0x7f0400a0;
+        public static final int salaOpciones=0x7f04006c;
+        public static final int sala_activo=0x7f0400c6;
+        public static final int sala_bloqueado=0x7f0400c7;
+        public static final int sala_name=0x7f0400c5;
+        public static final int salas=0x7f0400c2;
         public static final int selected_view=0x7f040014;
-        public static final int servicio=0x7f04009b;
+        public static final int servicio=0x7f040080;
         public static final int servicio2=0x7f04004c;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
-        public static final int slidingmenumain=0x7f0400c2;
-        public static final int stringAnestesiologo=0x7f0400cc;
-        public static final int stringAnestesiologoSupervisa=0x7f0400ce;
-        public static final int stringCausaDiferido=0x7f04005a;
-        public static final int stringCirculante=0x7f0400d6;
-        public static final int stringClasificacion=0x7f040072;
-        public static final int stringComplicaciones=0x7f040082;
-        public static final int stringContaminacion=0x7f04007c;
-        public static final int stringDestino=0x7f040074;
+        public static final int show_data=0x7f04006a;
+        public static final int slidingmenumain=0x7f0400c8;
+        public static final int spinnerLayout=0x7f040058;
+        public static final int stringAnestesiologo=0x7f0400d1;
+        public static final int stringAnestesiologoSupervisa=0x7f0400d3;
+        public static final int stringCausaDiferido=0x7f04005b;
+        public static final int stringCirculante=0x7f0400db;
+        public static final int stringClasificacion=0x7f0400a6;
+        public static final int stringComplicaciones=0x7f0400b6;
+        public static final int stringContaminacion=0x7f0400b0;
+        public static final int stringDestino=0x7f0400a8;
         public static final int stringDetallesAdicionales=0x7f040049;
-        public static final int stringDiagnostico=0x7f04009c;
-        public static final int stringDuracion=0x7f04008c;
-        public static final int stringEdad=0x7f040094;
-        public static final int stringEnAtencionA=0x7f0400a8;
-        public static final int stringEventoAdverso=0x7f04007a;
-        public static final int stringEventosAnestesia=0x7f040080;
-        public static final int stringFecha=0x7f040088;
-        public static final int stringGenero=0x7f040096;
-        public static final int stringHemoderivados=0x7f0400b3;
-        public static final int stringHoraPropuesta=0x7f04008a;
-        public static final int stringInfeccion=0x7f04007e;
-        public static final int stringIngreso=0x7f0400c5;
-        public static final int stringInstrumentista=0x7f0400d2;
-        public static final int stringInsumosIndispensables=0x7f0400af;
-        public static final int stringMedico=0x7f0400a6;
-        public static final int stringNombreDelPaciente=0x7f040092;
+        public static final int stringDiagnostico=0x7f040081;
+        public static final int stringDuracion=0x7f040071;
+        public static final int stringEdad=0x7f040079;
+        public static final int stringEnAtencionA=0x7f04008d;
+        public static final int stringEventoAdverso=0x7f0400ae;
+        public static final int stringEventosAnestesia=0x7f0400b4;
+        public static final int stringFecha=0x7f04006d;
+        public static final int stringGenero=0x7f04007b;
+        public static final int stringHemoderivados=0x7f040098;
+        public static final int stringHoraPropuesta=0x7f04006f;
+        public static final int stringInfeccion=0x7f0400b2;
+        public static final int stringIngreso=0x7f0400cb;
+        public static final int stringInstrumentista=0x7f0400d7;
+        public static final int stringInsumosIndispensables=0x7f040094;
+        public static final int stringMedico=0x7f04008b;
+        public static final int stringNombreDelPaciente=0x7f040077;
         public static final int stringNombrePersonal=0x7f040054;
-        public static final int stringObservaciones=0x7f0400da;
-        public static final int stringOtrasNecesidades=0x7f0400b7;
-        public static final int stringPersonal=0x7f040084;
-        public static final int stringPersonalEnCirugia=0x7f040053;
-        public static final int stringProcedencia=0x7f040098;
+        public static final int stringObservaciones=0x7f0400df;
+        public static final int stringOtrasNecesidades=0x7f04009c;
+        public static final int stringPersonal=0x7f0400b8;
+        public static final int stringPersonalEnCirugia=0x7f040052;
+        public static final int stringProcedencia=0x7f04007d;
         public static final int stringProcedimientoOCirugia=0x7f040045;
-        public static final int stringProtocolo=0x7f04009e;
+        public static final int stringProtocolo=0x7f040083;
         public static final int stringRegion=0x7f040047;
-        public static final int stringRegistro=0x7f040090;
-        public static final int stringReintervencion=0x7f0400a2;
-        public static final int stringRequerimientos=0x7f0400b1;
-        public static final int stringRequisitosDeLaboratorio=0x7f0400b5;
-        public static final int stringRiesgoQuirurgico=0x7f0400ad;
-        public static final int stringSala=0x7f040086;
-        public static final int stringSalida=0x7f040070;
-        public static final int stringServicio=0x7f04009a;
+        public static final int stringRegistro=0x7f040075;
+        public static final int stringReintervencion=0x7f040087;
+        public static final int stringRequerimientos=0x7f040096;
+        public static final int stringRequisitosDeLaboratorio=0x7f04009a;
+        public static final int stringRiesgoQuirurgico=0x7f040092;
+        public static final int stringSala=0x7f04006b;
+        public static final int stringSalida=0x7f0400a5;
+        public static final int stringServicio=0x7f04007f;
         public static final int stringServicio2=0x7f04004b;
-        public static final int stringTecnicaAnestesica=0x7f0400d0;
+        public static final int stringTecnicaAnestesica=0x7f0400d5;
         public static final int stringTipo=0x7f040056;
-        public static final int stringTipoDeProgramacion=0x7f04008e;
-        public static final int stringTurnoCirculante=0x7f0400d8;
-        public static final int stringTurnoInstrumentista=0x7f0400d4;
-        public static final int tab1=0x7f04004e;
-        public static final int tab2=0x7f04004f;
-        public static final int tab3=0x7f040050;
-        public static final int tab4=0x7f040051;
+        public static final int stringTipoDeProgramacion=0x7f040073;
+        public static final int stringTurnoCirculante=0x7f0400dd;
+        public static final int stringTurnoInstrumentista=0x7f0400d9;
+        public static final int tab1=0x7f04004d;
+        public static final int tab2=0x7f04004e;
+        public static final int tab3=0x7f04004f;
+        public static final int tab4=0x7f040050;
         public static final int tabMode=0x7f040003;
-        public static final int table=0x7f040065;
-        public static final int table_salas=0x7f0400c4;
-        public static final int tecnicaAnestesica=0x7f0400d1;
-        public static final int test=0x7f0400ac;
-        public static final int tiempoFuera=0x7f0400c7;
-        public static final int tiempoFueraNo=0x7f0400c8;
-        public static final int tiempoFueraSi=0x7f0400c9;
+        public static final int table=0x7f040053;
+        public static final int table_salas=0x7f0400ca;
+        public static final int tecnicaAnestesica=0x7f0400d6;
+        public static final int tiempoFuera=0x7f0400cc;
+        public static final int tiempoFueraNo=0x7f0400cd;
+        public static final int tiempoFueraSi=0x7f0400ce;
         public static final int tipo=0x7f040057;
-        public static final int tipoDeProgramacion=0x7f04008f;
-        public static final int title=0x7f040064;
+        public static final int tipoDeProgramacion=0x7f040074;
+        public static final int tipo_Personal=0x7f0400c4;
+        public static final int title=0x7f040065;
         public static final int titulo=0x7f040037;
-        public static final int titulo_quirofano=0x7f0400b9;
-        public static final int traumatologiaButton=0x7f04005f;
-        public static final int turnoCirculante=0x7f0400d9;
-        public static final int turnoInstrumentista=0x7f0400d5;
+        public static final int titulo_quirofano=0x7f0400bc;
+        public static final int traumatologiaButton=0x7f040060;
+        public static final int turnoCirculante=0x7f0400de;
+        public static final int turnoInstrumentista=0x7f0400da;
         public static final int useLogo=0x7f040004;
         public static final int user=0x7f040040;
         public static final int vista=0x7f04003d;
@@ -1288,58 +1312,90 @@ containing a value of this type.
         public static final int abs__simple_dropdown_hint=0x7f030014;
         public static final int acciones=0x7f030015;
         public static final int acciones_diferida=0x7f030016;
-        public static final int acciones_realizada=0x7f030017;
-        public static final int acciones_transoperatorio=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int activity_main2=0x7f03001a;
-        public static final int activity_main3=0x7f03001b;
-        public static final int activity_menu=0x7f03001c;
-        public static final int add_linear=0x7f03001d;
-        public static final int agendadeldia=0x7f03001e;
-        public static final int c_ambulatoria=0x7f03001f;
-        public static final int cambio_personal=0x7f030020;
-        public static final int contacto=0x7f030021;
-        public static final int content_frame=0x7f030022;
-        public static final int diferir=0x7f030023;
-        public static final int entrar=0x7f030024;
-        public static final int home=0x7f030025;
-        public static final int home2=0x7f030026;
-        public static final int item1=0x7f030027;
-        public static final int item2=0x7f030028;
-        public static final int item3=0x7f030029;
-        public static final int item4=0x7f03002a;
-        public static final int item5=0x7f03002b;
-        public static final int list=0x7f03002c;
-        public static final int lista_quirofanos=0x7f03002d;
-        public static final int menu_frame=0x7f03002e;
-        public static final int newtablerow=0x7f03002f;
-        public static final int newtablerow_editable=0x7f030030;
-        public static final int postoperatorio=0x7f030031;
-        public static final int programar_cirugia=0x7f030032;
-        public static final int programar_cirugia1=0x7f030033;
-        public static final int programar_cirugia_ambulatoria=0x7f030034;
-        public static final int programar_cirugia_traumatologia=0x7f030035;
-        public static final int qcentral=0x7f030036;
-        public static final int qcentral1=0x7f030037;
-        public static final int salas_cabecera=0x7f030038;
-        public static final int sherlock_spinner_dropdown_item=0x7f030039;
-        public static final int sherlock_spinner_item=0x7f03003a;
-        public static final int slidingmenumain=0x7f03003b;
-        public static final int splash=0x7f03003c;
-        public static final int tabla_dia=0x7f03003d;
-        public static final int tabla_salas=0x7f03003e;
-        public static final int tabla_salas_editable=0x7f03003f;
-        public static final int tablerow=0x7f030040;
-        public static final int tablerow_editable=0x7f030041;
-        public static final int tiposde_cirugias=0x7f030042;
-        public static final int transoperatorio=0x7f030043;
-        public static final int traumatologia=0x7f030044;
+        public static final int acciones_programada_pasada=0x7f030017;
+        public static final int acciones_realizada=0x7f030018;
+        public static final int acciones_transoperatorio=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int activity_main2=0x7f03001b;
+        public static final int activity_main3=0x7f03001c;
+        public static final int activity_menu=0x7f03001d;
+        public static final int add_linear=0x7f03001e;
+        public static final int agendadeldia=0x7f03001f;
+        public static final int c_ambulatoria=0x7f030020;
+        public static final int cambio_personal=0x7f030021;
+        public static final int contacto=0x7f030022;
+        public static final int content_frame=0x7f030023;
+        public static final int diferir=0x7f030024;
+        public static final int entrar=0x7f030025;
+        public static final int home=0x7f030026;
+        public static final int home2=0x7f030027;
+        public static final int item1=0x7f030028;
+        public static final int item2=0x7f030029;
+        public static final int item3=0x7f03002a;
+        public static final int item4=0x7f03002b;
+        public static final int item5=0x7f03002c;
+        public static final int list=0x7f03002d;
+        public static final int lista_quirofanos=0x7f03002e;
+        public static final int menu_frame=0x7f03002f;
+        public static final int modificar_cirugia=0x7f030030;
+        public static final int newtablerow=0x7f030031;
+        public static final int newtablerow_editable=0x7f030032;
+        public static final int postoperatorio=0x7f030033;
+        public static final int programar_cirugia=0x7f030034;
+        public static final int programar_cirugia1=0x7f030035;
+        public static final int programar_cirugia_ambulatoria=0x7f030036;
+        public static final int programar_cirugia_traumatologia=0x7f030037;
+        public static final int qcentral=0x7f030038;
+        public static final int qcentral1=0x7f030039;
+        public static final int row_agregarpersonal=0x7f03003a;
+        public static final int row_agregarpersonal_dinamico=0x7f03003b;
+        public static final int salas_cabecera=0x7f03003c;
+        public static final int sherlock_spinner_dropdown_item=0x7f03003d;
+        public static final int sherlock_spinner_item=0x7f03003e;
+        public static final int slidingmenumain=0x7f03003f;
+        public static final int splash=0x7f030040;
+        public static final int tabla_dia=0x7f030041;
+        public static final int tabla_salas=0x7f030042;
+        public static final int tabla_salas_editable=0x7f030043;
+        public static final int tablerow=0x7f030044;
+        public static final int tablerow_editable=0x7f030045;
+        public static final int tiposde_cirugias=0x7f030046;
+        public static final int transoperatorio=0x7f030047;
+        public static final int traumatologia=0x7f030048;
     }
     public static final class menu {
         public static final int activity_main=0x7f0c0000;
         public static final int main=0x7f0c0001;
     }
     public static final class string {
+        /**  Para todos los xml de acciones_ 
+         */
+        public static final int Acciones=0x7f090036;
+        public static final int Activo=0x7f090033;
+        public static final int AddPersonal=0x7f09003d;
+        public static final int Bloqueado=0x7f090034;
+        public static final int CanceCiru=0x7f090038;
+        public static final int DetAdicio=0x7f09002e;
+        public static final int DifeCiru=0x7f09003a;
+        public static final int FinCiru=0x7f09003c;
+        public static final int InfoCiru=0x7f09003b;
+        public static final int IniCiru=0x7f090039;
+        /**  Para el xml tabla_salas 
+         */
+        public static final int ListSalas=0x7f090035;
+        public static final int ModCiru=0x7f090037;
+        /**  Para el xml row_agregarpersonal_dinamico 
+         */
+        public static final int Nombre=0x7f090030;
+        /**  Para el add_linear que se usa en Programar Cirugía 
+         */
+        public static final int ProcOCirPlan=0x7f09002c;
+        public static final int Region=0x7f09002d;
+        /**  Para el xml salas_cabecera y para el de tabla_salas_editable
+         */
+        public static final int Sala=0x7f090032;
+        public static final int Servicio=0x7f09002f;
+        public static final int Tipo=0x7f090031;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f090000;
@@ -1608,7 +1664,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:background
+          @attr name com.hu.quirofano:background
         */
         public static final int SherlockActionBar_background = 2;
         /**
@@ -1622,7 +1678,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:backgroundSplit
+          @attr name com.hu.quirofano:backgroundSplit
         */
         public static final int SherlockActionBar_backgroundSplit = 3;
         /**
@@ -1636,7 +1692,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:backgroundStacked
+          @attr name com.hu.quirofano:backgroundStacked
         */
         public static final int SherlockActionBar_backgroundStacked = 12;
         /**
@@ -1648,7 +1704,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:customNavigationLayout
+          @attr name com.hu.quirofano:customNavigationLayout
         */
         public static final int SherlockActionBar_customNavigationLayout = 13;
         /**
@@ -1671,7 +1727,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>disableHome</code></td><td>0x20</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:displayOptions
+          @attr name com.hu.quirofano:displayOptions
         */
         public static final int SherlockActionBar_displayOptions = 7;
         /**
@@ -1683,7 +1739,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:divider
+          @attr name com.hu.quirofano:divider
         */
         public static final int SherlockActionBar_divider = 5;
         /**
@@ -1701,7 +1757,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:height
+          @attr name com.hu.quirofano:height
         */
         public static final int SherlockActionBar_height = 4;
         /**
@@ -1713,7 +1769,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:homeLayout
+          @attr name com.hu.quirofano:homeLayout
         */
         public static final int SherlockActionBar_homeLayout = 14;
         /**
@@ -1725,7 +1781,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:icon
+          @attr name com.hu.quirofano:icon
         */
         public static final int SherlockActionBar_icon = 10;
         /**
@@ -1737,7 +1793,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:indeterminateProgressStyle
+          @attr name com.hu.quirofano:indeterminateProgressStyle
         */
         public static final int SherlockActionBar_indeterminateProgressStyle = 16;
         /**
@@ -1756,7 +1812,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:itemPadding
+          @attr name com.hu.quirofano:itemPadding
         */
         public static final int SherlockActionBar_itemPadding = 18;
         /**
@@ -1768,7 +1824,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:logo
+          @attr name com.hu.quirofano:logo
         */
         public static final int SherlockActionBar_logo = 11;
         /**
@@ -1788,7 +1844,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <tr><td><code>tabMode</code></td><td>2</td><td> The action bar will use a series of horizontal tabs for navigation. </td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:navigationMode
+          @attr name com.hu.quirofano:navigationMode
         */
         public static final int SherlockActionBar_navigationMode = 6;
         /**
@@ -1806,7 +1862,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:progressBarPadding
+          @attr name com.hu.quirofano:progressBarPadding
         */
         public static final int SherlockActionBar_progressBarPadding = 17;
         /**
@@ -1818,7 +1874,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:progressBarStyle
+          @attr name com.hu.quirofano:progressBarStyle
         */
         public static final int SherlockActionBar_progressBarStyle = 15;
         /**
@@ -1834,7 +1890,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:subtitle
+          @attr name com.hu.quirofano:subtitle
         */
         public static final int SherlockActionBar_subtitle = 9;
         /**
@@ -1846,7 +1902,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:subtitleTextStyle
+          @attr name com.hu.quirofano:subtitleTextStyle
         */
         public static final int SherlockActionBar_subtitleTextStyle = 1;
         /**
@@ -1862,7 +1918,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:title
+          @attr name com.hu.quirofano:title
         */
         public static final int SherlockActionBar_title = 8;
         /**
@@ -1874,7 +1930,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:titleTextStyle
+          @attr name com.hu.quirofano:titleTextStyle
         */
         public static final int SherlockActionBar_titleTextStyle = 0;
         /** Attributes that can be used with a SherlockActionMenuItemView.
@@ -1883,7 +1939,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActionMenuItemView_android_minWidth com.hu.quirofano:android_minWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActionMenuItemView_android_minWidth android:minWidth}</code></td><td></td></tr>
            </table>
            @see #SherlockActionMenuItemView_android_minWidth
          */
@@ -1891,9 +1947,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x0101013f
         };
         /**
-          <p>This symbol is the offset where the {@link com.hu.quirofano.R.attr#android_minWidth}
+          <p>This symbol is the offset where the {@link android.R.attr#minWidth}
           attribute's value can be found in the {@link #SherlockActionMenuItemView} array.
-          @attr name android:android_minWidth
+          @attr name android:minWidth
         */
         public static final int SherlockActionMenuItemView_android_minWidth = 0;
         /** Attributes that can be used with a SherlockActionMode.
@@ -1929,7 +1985,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:background
+          @attr name com.hu.quirofano:background
         */
         public static final int SherlockActionMode_background = 2;
         /**
@@ -1943,7 +1999,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:backgroundSplit
+          @attr name com.hu.quirofano:backgroundSplit
         */
         public static final int SherlockActionMode_backgroundSplit = 3;
         /**
@@ -1961,7 +2017,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:height
+          @attr name com.hu.quirofano:height
         */
         public static final int SherlockActionMode_height = 4;
         /**
@@ -1973,7 +2029,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:subtitleTextStyle
+          @attr name com.hu.quirofano:subtitleTextStyle
         */
         public static final int SherlockActionMode_subtitleTextStyle = 1;
         /**
@@ -1985,7 +2041,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:titleTextStyle
+          @attr name com.hu.quirofano:titleTextStyle
         */
         public static final int SherlockActionMode_titleTextStyle = 0;
         /** Attributes that can be used with a SherlockActivityChooserView.
@@ -1994,7 +2050,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockActivityChooserView_android_background com.hu.quirofano:android_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockActivityChooserView_android_background android:background}</code></td><td></td></tr>
            <tr><td><code>{@link #SherlockActivityChooserView_expandActivityOverflowButtonDrawable com.hu.quirofano:expandActivityOverflowButtonDrawable}</code></td><td> The drawable to show in the button for expanding the activities overflow popup.</td></tr>
            <tr><td><code>{@link #SherlockActivityChooserView_initialActivityCount com.hu.quirofano:initialActivityCount}</code></td><td> The maximal number of items initially shown in the activity list.</td></tr>
            </table>
@@ -2006,9 +2062,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
             0x010100d4, 0x7f01005e, 0x7f01005f
         };
         /**
-          <p>This symbol is the offset where the {@link com.hu.quirofano.R.attr#android_background}
+          <p>This symbol is the offset where the {@link android.R.attr#background}
           attribute's value can be found in the {@link #SherlockActivityChooserView} array.
-          @attr name android:android_background
+          @attr name android:background
         */
         public static final int SherlockActivityChooserView_android_background = 0;
         /**
@@ -2025,7 +2081,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:expandActivityOverflowButtonDrawable
+          @attr name com.hu.quirofano:expandActivityOverflowButtonDrawable
         */
         public static final int SherlockActivityChooserView_expandActivityOverflowButtonDrawable = 2;
         /**
@@ -2041,7 +2097,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:initialActivityCount
+          @attr name com.hu.quirofano:initialActivityCount
         */
         public static final int SherlockActivityChooserView_initialActivityCount = 1;
         /**  Base attributes that are available to all groups. 
@@ -2050,12 +2106,12 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_checkableBehavior com.hu.quirofano:android_checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_enabled com.hu.quirofano:android_enabled}</code></td><td> Whether the items are enabled.</td></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_id com.hu.quirofano:android_id}</code></td><td> The ID of the group.</td></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_menuCategory com.hu.quirofano:android_menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_orderInCategory com.hu.quirofano:android_orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
-           <tr><td><code>{@link #SherlockMenuGroup_android_visible com.hu.quirofano:android_visible}</code></td><td> Whether the items are shown/visible.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_checkableBehavior android:checkableBehavior}</code></td><td> Whether the items are capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_enabled android:enabled}</code></td><td> Whether the items are enabled.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_id android:id}</code></td><td> The ID of the group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_menuCategory android:menuCategory}</code></td><td> The category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to all items within this group.</td></tr>
+           <tr><td><code>{@link #SherlockMenuGroup_android_visible android:visible}</code></td><td> Whether the items are shown/visible.</td></tr>
            </table>
            @see #SherlockMenuGroup_android_checkableBehavior
            @see #SherlockMenuGroup_android_enabled
@@ -2072,24 +2128,27 @@ containing a value of this type.
           <p>
           @attr description
            Whether the items are capable of displaying a check mark. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_checkableBehavior}.
-          @attr name android:android_checkableBehavior
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkableBehavior}.
+          @attr name android:checkableBehavior
         */
         public static final int SherlockMenuGroup_android_checkableBehavior = 5;
         /**
           <p>
           @attr description
            Whether the items are enabled. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_enabled}.
-          @attr name android:android_enabled
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
         */
         public static final int SherlockMenuGroup_android_enabled = 0;
         /**
           <p>
           @attr description
            The ID of the group. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_id}.
-          @attr name android:android_id
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
         */
         public static final int SherlockMenuGroup_android_id = 1;
         /**
@@ -2097,8 +2156,9 @@ containing a value of this type.
           @attr description
            The category applied to all items within this group.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_menuCategory}.
-          @attr name android:android_menuCategory
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
         */
         public static final int SherlockMenuGroup_android_menuCategory = 3;
         /**
@@ -2106,16 +2166,18 @@ containing a value of this type.
           @attr description
            The order within the category applied to all items within this group.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_orderInCategory}.
-          @attr name android:android_orderInCategory
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
         */
         public static final int SherlockMenuGroup_android_orderInCategory = 4;
         /**
           <p>
           @attr description
            Whether the items are shown/visible. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_visible}.
-          @attr name android:android_visible
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
         */
         public static final int SherlockMenuGroup_android_visible = 2;
         /**  Base attributes that are available to all Item objects. 
@@ -2124,26 +2186,26 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_actionLayout com.hu.quirofano:android_actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_actionProviderClass com.hu.quirofano:android_actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
+           <tr><td><code>{@link #SherlockMenuItem_android_actionLayout android:actionLayout}</code></td><td> An optional layout to be used as an action view.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_actionProviderClass android:actionProviderClass}</code></td><td> The name of an optional ActionProvider class to instantiate an action view
              and perform operations such as default action for that menu item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_actionViewClass com.hu.quirofano:android_actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
+           <tr><td><code>{@link #SherlockMenuItem_android_actionViewClass android:actionViewClass}</code></td><td> The name of an optional View class to instantiate and use as an
              action view.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_alphabeticShortcut com.hu.quirofano:android_alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_checkable com.hu.quirofano:android_checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_checked com.hu.quirofano:android_checked}</code></td><td> Whether the item is checked.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_enabled com.hu.quirofano:android_enabled}</code></td><td> Whether the item is enabled.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_icon com.hu.quirofano:android_icon}</code></td><td> The icon associated with this item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_id com.hu.quirofano:android_id}</code></td><td> The ID of the item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_menuCategory com.hu.quirofano:android_menuCategory}</code></td><td> The category applied to the item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_numericShortcut com.hu.quirofano:android_numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_onClick com.hu.quirofano:android_onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
+           <tr><td><code>{@link #SherlockMenuItem_android_alphabeticShortcut android:alphabeticShortcut}</code></td><td> The alphabetic shortcut key.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_checkable android:checkable}</code></td><td> Whether the item is capable of displaying a check mark.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_checked android:checked}</code></td><td> Whether the item is checked.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_enabled android:enabled}</code></td><td> Whether the item is enabled.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_icon android:icon}</code></td><td> The icon associated with this item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_id android:id}</code></td><td> The ID of the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_menuCategory android:menuCategory}</code></td><td> The category applied to the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_numericShortcut android:numericShortcut}</code></td><td> The numeric shortcut key.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_onClick android:onClick}</code></td><td> Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_orderInCategory com.hu.quirofano:android_orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_showAsAction com.hu.quirofano:android_showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_title com.hu.quirofano:android_title}</code></td><td> The title associated with the item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_titleCondensed com.hu.quirofano:android_titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
-           <tr><td><code>{@link #SherlockMenuItem_android_visible com.hu.quirofano:android_visible}</code></td><td> Whether the item is shown/visible.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_orderInCategory android:orderInCategory}</code></td><td> The order within the category applied to the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_showAsAction android:showAsAction}</code></td><td> How this item should display in the Action Bar, if present.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_title android:title}</code></td><td> The title associated with the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_titleCondensed android:titleCondensed}</code></td><td> The condensed title associated with the item.</td></tr>
+           <tr><td><code>{@link #SherlockMenuItem_android_visible android:visible}</code></td><td> Whether the item is shown/visible.</td></tr>
            </table>
            @see #SherlockMenuItem_android_actionLayout
            @see #SherlockMenuItem_android_actionProviderClass
@@ -2176,8 +2238,9 @@ containing a value of this type.
            An optional layout to be used as an action view.
              See {@link android.view.MenuItem#setActionView(android.view.View)}
              for more info. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_actionLayout}.
-          @attr name android:android_actionLayout
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionLayout}.
+          @attr name android:actionLayout
         */
         public static final int SherlockMenuItem_android_actionLayout = 14;
         /**
@@ -2187,8 +2250,9 @@ containing a value of this type.
              and perform operations such as default action for that menu item.
              See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
              for more info. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_actionProviderClass}.
-          @attr name android:android_actionProviderClass
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionProviderClass}.
+          @attr name android:actionProviderClass
         */
         public static final int SherlockMenuItem_android_actionProviderClass = 16;
         /**
@@ -2197,8 +2261,9 @@ containing a value of this type.
            The name of an optional View class to instantiate and use as an
              action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
              for more info. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_actionViewClass}.
-          @attr name android:android_actionViewClass
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#actionViewClass}.
+          @attr name android:actionViewClass
         */
         public static final int SherlockMenuItem_android_actionViewClass = 15;
         /**
@@ -2206,16 +2271,18 @@ containing a value of this type.
           @attr description
            The alphabetic shortcut key.  This is the shortcut when using a keyboard
              with alphabetic keys. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_alphabeticShortcut}.
-          @attr name android:android_alphabeticShortcut
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#alphabeticShortcut}.
+          @attr name android:alphabeticShortcut
         */
         public static final int SherlockMenuItem_android_alphabeticShortcut = 9;
         /**
           <p>
           @attr description
            Whether the item is capable of displaying a check mark. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_checkable}.
-          @attr name android:android_checkable
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checkable}.
+          @attr name android:checkable
         */
         public static final int SherlockMenuItem_android_checkable = 11;
         /**
@@ -2223,16 +2290,18 @@ containing a value of this type.
           @attr description
            Whether the item is checked.  Note that you must first have enabled checking with
              the checkable attribute or else the check mark will not appear. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_checked}.
-          @attr name android:android_checked
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#checked}.
+          @attr name android:checked
         */
         public static final int SherlockMenuItem_android_checked = 3;
         /**
           <p>
           @attr description
            Whether the item is enabled. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_enabled}.
-          @attr name android:android_enabled
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#enabled}.
+          @attr name android:enabled
         */
         public static final int SherlockMenuItem_android_enabled = 1;
         /**
@@ -2240,16 +2309,18 @@ containing a value of this type.
           @attr description
            The icon associated with this item.  This icon will not always be shown, so
              the title should be sufficient in describing this item. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_icon}.
-          @attr name android:android_icon
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#icon}.
+          @attr name android:icon
         */
         public static final int SherlockMenuItem_android_icon = 0;
         /**
           <p>
           @attr description
            The ID of the item. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_id}.
-          @attr name android:android_id
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#id}.
+          @attr name android:id
         */
         public static final int SherlockMenuItem_android_id = 2;
         /**
@@ -2257,8 +2328,9 @@ containing a value of this type.
           @attr description
            The category applied to the item.
              (This will be or'ed with the orderInCategory attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_menuCategory}.
-          @attr name android:android_menuCategory
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#menuCategory}.
+          @attr name android:menuCategory
         */
         public static final int SherlockMenuItem_android_menuCategory = 5;
         /**
@@ -2266,8 +2338,9 @@ containing a value of this type.
           @attr description
            The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
              keyboard. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_numericShortcut}.
-          @attr name android:android_numericShortcut
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#numericShortcut}.
+          @attr name android:numericShortcut
         */
         public static final int SherlockMenuItem_android_numericShortcut = 10;
         /**
@@ -2275,8 +2348,9 @@ containing a value of this type.
           @attr description
            Name of a method on the Context used to inflate the menu that will be
              called when the item is clicked. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_onClick}.
-          @attr name android:android_onClick
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#onClick}.
+          @attr name android:onClick
         */
         public static final int SherlockMenuItem_android_onClick = 12;
         /**
@@ -2284,24 +2358,27 @@ containing a value of this type.
           @attr description
            The order within the category applied to the item.
              (This will be or'ed with the category attribute.) 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_orderInCategory}.
-          @attr name android:android_orderInCategory
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#orderInCategory}.
+          @attr name android:orderInCategory
         */
         public static final int SherlockMenuItem_android_orderInCategory = 6;
         /**
           <p>
           @attr description
            How this item should display in the Action Bar, if present. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_showAsAction}.
-          @attr name android:android_showAsAction
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#showAsAction}.
+          @attr name android:showAsAction
         */
         public static final int SherlockMenuItem_android_showAsAction = 13;
         /**
           <p>
           @attr description
            The title associated with the item. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_title}.
-          @attr name android:android_title
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#title}.
+          @attr name android:title
         */
         public static final int SherlockMenuItem_android_title = 7;
         /**
@@ -2309,16 +2386,18 @@ containing a value of this type.
           @attr description
            The condensed title associated with the item.  This is used in situations where the
              normal title may be too long to be displayed. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_titleCondensed}.
-          @attr name android:android_titleCondensed
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#titleCondensed}.
+          @attr name android:titleCondensed
         */
         public static final int SherlockMenuItem_android_titleCondensed = 8;
         /**
           <p>
           @attr description
            Whether the item is shown/visible. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_visible}.
-          @attr name android:android_visible
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#visible}.
+          @attr name android:visible
         */
         public static final int SherlockMenuItem_android_visible = 4;
         /** Attributes that can be used with a SherlockMenuView.
@@ -2360,7 +2439,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:headerBackground
+          @attr name com.hu.quirofano:headerBackground
         */
         public static final int SherlockMenuView_headerBackground = 3;
         /**
@@ -2372,7 +2451,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:horizontalDivider
+          @attr name com.hu.quirofano:horizontalDivider
         */
         public static final int SherlockMenuView_horizontalDivider = 1;
         /**
@@ -2386,7 +2465,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:itemBackground
+          @attr name com.hu.quirofano:itemBackground
         */
         public static final int SherlockMenuView_itemBackground = 4;
         /**
@@ -2402,7 +2481,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:itemIconDisabledAlpha
+          @attr name com.hu.quirofano:itemIconDisabledAlpha
         */
         public static final int SherlockMenuView_itemIconDisabledAlpha = 6;
         /**
@@ -2414,7 +2493,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:itemTextAppearance
+          @attr name com.hu.quirofano:itemTextAppearance
         */
         public static final int SherlockMenuView_itemTextAppearance = 0;
         /**
@@ -2430,7 +2509,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:preserveIconSpacing
+          @attr name com.hu.quirofano:preserveIconSpacing
         */
         public static final int SherlockMenuView_preserveIconSpacing = 7;
         /**
@@ -2442,7 +2521,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:verticalDivider
+          @attr name com.hu.quirofano:verticalDivider
         */
         public static final int SherlockMenuView_verticalDivider = 2;
         /**
@@ -2454,7 +2533,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:windowAnimationStyle
+          @attr name com.hu.quirofano:windowAnimationStyle
         */
         public static final int SherlockMenuView_windowAnimationStyle = 5;
         /** Attributes that can be used with a SherlockSearchView.
@@ -2463,9 +2542,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockSearchView_android_imeOptions com.hu.quirofano:android_imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SherlockSearchView_android_inputType com.hu.quirofano:android_inputType}</code></td><td> The input type to set on the query text field.</td></tr>
-           <tr><td><code>{@link #SherlockSearchView_android_maxWidth com.hu.quirofano:android_maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_imeOptions android:imeOptions}</code></td><td> The IME options to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_inputType android:inputType}</code></td><td> The input type to set on the query text field.</td></tr>
+           <tr><td><code>{@link #SherlockSearchView_android_maxWidth android:maxWidth}</code></td><td> An optional maximum width of the SearchView.</td></tr>
            <tr><td><code>{@link #SherlockSearchView_iconifiedByDefault com.hu.quirofano:iconifiedByDefault}</code></td><td> The default state of the SearchView.</td></tr>
            <tr><td><code>{@link #SherlockSearchView_queryHint com.hu.quirofano:queryHint}</code></td><td> An optional query hint string to be displayed in the empty query field.</td></tr>
            </table>
@@ -2483,24 +2562,27 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>
           @attr description
            The IME options to set on the query text field. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_imeOptions}.
-          @attr name android:android_imeOptions
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#imeOptions}.
+          @attr name android:imeOptions
         */
         public static final int SherlockSearchView_android_imeOptions = 2;
         /**
           <p>
           @attr description
            The input type to set on the query text field. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_inputType}.
-          @attr name android:android_inputType
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#inputType}.
+          @attr name android:inputType
         */
         public static final int SherlockSearchView_android_inputType = 1;
         /**
           <p>
           @attr description
            An optional maximum width of the SearchView. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_maxWidth}.
-          @attr name android:android_maxWidth
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#maxWidth}.
+          @attr name android:maxWidth
         */
         public static final int SherlockSearchView_android_maxWidth = 0;
         /**
@@ -2517,7 +2599,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:iconifiedByDefault
+          @attr name com.hu.quirofano:iconifiedByDefault
         */
         public static final int SherlockSearchView_iconifiedByDefault = 3;
         /**
@@ -2533,7 +2615,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:queryHint
+          @attr name com.hu.quirofano:queryHint
         */
         public static final int SherlockSearchView_queryHint = 4;
         /** Attributes that can be used with a SherlockSpinner.
@@ -2542,17 +2624,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_dropDownHorizontalOffset com.hu.quirofano:android_dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownHorizontalOffset android:dropDownHorizontalOffset}</code></td><td> Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_dropDownSelector com.hu.quirofano:android_dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_dropDownVerticalOffset com.hu.quirofano:android_dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownSelector android:dropDownSelector}</code></td><td> List selector to use for spinnerMode="dropdown" display.</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownVerticalOffset android:dropDownVerticalOffset}</code></td><td> Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_dropDownWidth com.hu.quirofano:android_dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_gravity com.hu.quirofano:android_gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_popupBackground com.hu.quirofano:android_popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_popupPromptView com.hu.quirofano:android_popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
+           <tr><td><code>{@link #SherlockSpinner_android_dropDownWidth android:dropDownWidth}</code></td><td> Width of the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_gravity android:gravity}</code></td><td> Gravity setting for positioning the currently selected item.</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_popupBackground android:popupBackground}</code></td><td> Background drawable to use for the dropdown in spinnerMode="dropdown".</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_popupPromptView android:popupPromptView}</code></td><td> Reference to a layout to use for displaying a prompt in the dropdown for
              spinnerMode="dropdown".</td></tr>
-           <tr><td><code>{@link #SherlockSpinner_android_prompt com.hu.quirofano:android_prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
+           <tr><td><code>{@link #SherlockSpinner_android_prompt android:prompt}</code></td><td> The prompt to display when the spinner's dialog is shown.</td></tr>
            </table>
            @see #SherlockSpinner_android_dropDownHorizontalOffset
            @see #SherlockSpinner_android_dropDownSelector
@@ -2572,16 +2654,18 @@ containing a value of this type.
           @attr description
            Horizontal offset from the spinner widget for positioning the dropdown
              in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_dropDownHorizontalOffset}.
-          @attr name android:android_dropDownHorizontalOffset
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownHorizontalOffset}.
+          @attr name android:dropDownHorizontalOffset
         */
         public static final int SherlockSpinner_android_dropDownHorizontalOffset = 5;
         /**
           <p>
           @attr description
            List selector to use for spinnerMode="dropdown" display. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_dropDownSelector}.
-          @attr name android:android_dropDownSelector
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownSelector}.
+          @attr name android:dropDownSelector
         */
         public static final int SherlockSpinner_android_dropDownSelector = 1;
         /**
@@ -2589,32 +2673,36 @@ containing a value of this type.
           @attr description
            Vertical offset from the spinner widget for positioning the dropdown in
              spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_dropDownVerticalOffset}.
-          @attr name android:android_dropDownVerticalOffset
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownVerticalOffset}.
+          @attr name android:dropDownVerticalOffset
         */
         public static final int SherlockSpinner_android_dropDownVerticalOffset = 6;
         /**
           <p>
           @attr description
            Width of the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_dropDownWidth}.
-          @attr name android:android_dropDownWidth
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#dropDownWidth}.
+          @attr name android:dropDownWidth
         */
         public static final int SherlockSpinner_android_dropDownWidth = 4;
         /**
           <p>
           @attr description
            Gravity setting for positioning the currently selected item. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_gravity}.
-          @attr name android:android_gravity
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#gravity}.
+          @attr name android:gravity
         */
         public static final int SherlockSpinner_android_gravity = 0;
         /**
           <p>
           @attr description
            Background drawable to use for the dropdown in spinnerMode="dropdown". 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_popupBackground}.
-          @attr name android:android_popupBackground
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#popupBackground}.
+          @attr name android:popupBackground
         */
         public static final int SherlockSpinner_android_popupBackground = 2;
         /**
@@ -2624,15 +2712,16 @@ containing a value of this type.
              spinnerMode="dropdown". This layout must contain a TextView with the id
              @android:id/text1 to be populated with the prompt text. 
           <p>This is a private symbol.
-          @attr name android:android_popupPromptView
+          @attr name android:popupPromptView
         */
         public static final int SherlockSpinner_android_popupPromptView = 7;
         /**
           <p>
           @attr description
            The prompt to display when the spinner's dialog is shown. 
-          <p>This corresponds to the global attribute          resource symbol {@link com.hu.quirofano.R.attr#android_prompt}.
-          @attr name android:android_prompt
+          <p>This corresponds to the global attribute
+          resource symbol {@link android.R.attr#prompt}.
+          @attr name android:prompt
         */
         public static final int SherlockSpinner_android_prompt = 3;
         /** Attributes that can be used with a SherlockTheme.
@@ -2809,7 +2898,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarDivider
+          @attr name com.hu.quirofano:actionBarDivider
         */
         public static final int SherlockTheme_actionBarDivider = 8;
         /**
@@ -2821,7 +2910,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarItemBackground
+          @attr name com.hu.quirofano:actionBarItemBackground
         */
         public static final int SherlockTheme_actionBarItemBackground = 9;
         /**
@@ -2848,7 +2937,7 @@ containing a value of this type.
 <tr><td><code>wrap_content</code></td><td>0</td><td></td></tr>
 </table>
           <p>This is a private symbol.
-          @attr name android:actionBarSize
+          @attr name com.hu.quirofano:actionBarSize
         */
         public static final int SherlockTheme_actionBarSize = 7;
         /**
@@ -2863,7 +2952,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarSplitStyle
+          @attr name com.hu.quirofano:actionBarSplitStyle
         */
         public static final int SherlockTheme_actionBarSplitStyle = 5;
         /**
@@ -2875,7 +2964,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarStyle
+          @attr name com.hu.quirofano:actionBarStyle
         */
         public static final int SherlockTheme_actionBarStyle = 4;
         /**
@@ -2885,7 +2974,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionBarTabBarStyle
+          @attr name com.hu.quirofano:actionBarTabBarStyle
         */
         public static final int SherlockTheme_actionBarTabBarStyle = 1;
         /**
@@ -2897,7 +2986,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarTabStyle
+          @attr name com.hu.quirofano:actionBarTabStyle
         */
         public static final int SherlockTheme_actionBarTabStyle = 0;
         /**
@@ -2907,7 +2996,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionBarTabTextStyle
+          @attr name com.hu.quirofano:actionBarTabTextStyle
         */
         public static final int SherlockTheme_actionBarTabTextStyle = 2;
         /**
@@ -2925,7 +3014,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionBarWidgetTheme
+          @attr name com.hu.quirofano:actionBarWidgetTheme
         */
         public static final int SherlockTheme_actionBarWidgetTheme = 6;
         /**
@@ -2935,7 +3024,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionButtonStyle
+          @attr name com.hu.quirofano:actionButtonStyle
         */
         public static final int SherlockTheme_actionButtonStyle = 52;
         /**
@@ -2945,7 +3034,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionDropDownStyle
+          @attr name com.hu.quirofano:actionDropDownStyle
         */
         public static final int SherlockTheme_actionDropDownStyle = 51;
         /**
@@ -2958,7 +3047,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionMenuTextAppearance
+          @attr name com.hu.quirofano:actionMenuTextAppearance
         */
         public static final int SherlockTheme_actionMenuTextAppearance = 10;
         /**
@@ -2972,7 +3061,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionMenuTextColor
+          @attr name com.hu.quirofano:actionMenuTextColor
         */
         public static final int SherlockTheme_actionMenuTextColor = 11;
         /**
@@ -2984,7 +3073,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionModeBackground
+          @attr name com.hu.quirofano:actionModeBackground
         */
         public static final int SherlockTheme_actionModeBackground = 14;
         /**
@@ -2994,7 +3083,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionModeCloseButtonStyle
+          @attr name com.hu.quirofano:actionModeCloseButtonStyle
         */
         public static final int SherlockTheme_actionModeCloseButtonStyle = 13;
         /**
@@ -3006,7 +3095,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionModeCloseDrawable
+          @attr name com.hu.quirofano:actionModeCloseDrawable
         */
         public static final int SherlockTheme_actionModeCloseDrawable = 16;
         /**
@@ -3018,7 +3107,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionModePopupWindowStyle
+          @attr name com.hu.quirofano:actionModePopupWindowStyle
         */
         public static final int SherlockTheme_actionModePopupWindowStyle = 18;
         /**
@@ -3030,7 +3119,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionModeShareDrawable
+          @attr name com.hu.quirofano:actionModeShareDrawable
         */
         public static final int SherlockTheme_actionModeShareDrawable = 17;
         /**
@@ -3042,7 +3131,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:actionModeSplitBackground
+          @attr name com.hu.quirofano:actionModeSplitBackground
         */
         public static final int SherlockTheme_actionModeSplitBackground = 15;
         /**
@@ -3052,7 +3141,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionModeStyle
+          @attr name com.hu.quirofano:actionModeStyle
         */
         public static final int SherlockTheme_actionModeStyle = 12;
         /**
@@ -3062,7 +3151,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionOverflowButtonStyle
+          @attr name com.hu.quirofano:actionOverflowButtonStyle
         */
         public static final int SherlockTheme_actionOverflowButtonStyle = 3;
         /**
@@ -3072,7 +3161,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:actionSpinnerItemStyle
+          @attr name com.hu.quirofano:actionSpinnerItemStyle
         */
         public static final int SherlockTheme_actionSpinnerItemStyle = 57;
         /**
@@ -3084,7 +3173,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:activatedBackgroundIndicator
+          @attr name com.hu.quirofano:activatedBackgroundIndicator
         */
         public static final int SherlockTheme_activatedBackgroundIndicator = 65;
         /**
@@ -3096,7 +3185,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:activityChooserViewStyle
+          @attr name com.hu.quirofano:activityChooserViewStyle
         */
         public static final int SherlockTheme_activityChooserViewStyle = 64;
         /**
@@ -3108,7 +3197,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:buttonStyleSmall
+          @attr name com.hu.quirofano:buttonStyleSmall
         */
         public static final int SherlockTheme_buttonStyleSmall = 19;
         /**
@@ -3120,7 +3209,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:dividerVertical
+          @attr name com.hu.quirofano:dividerVertical
         */
         public static final int SherlockTheme_dividerVertical = 50;
         /**
@@ -3130,7 +3219,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:dropDownHintAppearance
+          @attr name com.hu.quirofano:dropDownHintAppearance
         */
         public static final int SherlockTheme_dropDownHintAppearance = 66;
         /**
@@ -3140,7 +3229,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:dropDownListViewStyle
+          @attr name com.hu.quirofano:dropDownListViewStyle
         */
         public static final int SherlockTheme_dropDownListViewStyle = 54;
         /**
@@ -3156,7 +3245,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:dropdownListPreferredItemHeight
+          @attr name com.hu.quirofano:dropdownListPreferredItemHeight
         */
         public static final int SherlockTheme_dropdownListPreferredItemHeight = 56;
         /**
@@ -3166,7 +3255,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:homeAsUpIndicator
+          @attr name com.hu.quirofano:homeAsUpIndicator
         */
         public static final int SherlockTheme_homeAsUpIndicator = 53;
         /**
@@ -3176,7 +3265,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:listPopupWindowStyle
+          @attr name com.hu.quirofano:listPopupWindowStyle
         */
         public static final int SherlockTheme_listPopupWindowStyle = 63;
         /**
@@ -3194,7 +3283,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:listPreferredItemHeightSmall
+          @attr name com.hu.quirofano:listPreferredItemHeightSmall
         */
         public static final int SherlockTheme_listPreferredItemHeightSmall = 44;
         /**
@@ -3212,7 +3301,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:listPreferredItemPaddingLeft
+          @attr name com.hu.quirofano:listPreferredItemPaddingLeft
         */
         public static final int SherlockTheme_listPreferredItemPaddingLeft = 45;
         /**
@@ -3230,7 +3319,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:listPreferredItemPaddingRight
+          @attr name com.hu.quirofano:listPreferredItemPaddingRight
         */
         public static final int SherlockTheme_listPreferredItemPaddingRight = 46;
         /**
@@ -3240,7 +3329,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:popupMenuStyle
+          @attr name com.hu.quirofano:popupMenuStyle
         */
         public static final int SherlockTheme_popupMenuStyle = 55;
         /**
@@ -3252,7 +3341,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchAutoCompleteTextView
+          @attr name com.hu.quirofano:searchAutoCompleteTextView
         */
         public static final int SherlockTheme_searchAutoCompleteTextView = 30;
         /**
@@ -3264,7 +3353,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchDropdownBackground
+          @attr name com.hu.quirofano:searchDropdownBackground
         */
         public static final int SherlockTheme_searchDropdownBackground = 31;
         /**
@@ -3282,7 +3371,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
           <p>This is a private symbol.
-          @attr name android:searchResultListItemHeight
+          @attr name com.hu.quirofano:searchResultListItemHeight
         */
         public static final int SherlockTheme_searchResultListItemHeight = 41;
         /**
@@ -3294,7 +3383,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewCloseIcon
+          @attr name com.hu.quirofano:searchViewCloseIcon
         */
         public static final int SherlockTheme_searchViewCloseIcon = 32;
         /**
@@ -3306,7 +3395,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewEditQuery
+          @attr name com.hu.quirofano:searchViewEditQuery
         */
         public static final int SherlockTheme_searchViewEditQuery = 36;
         /**
@@ -3318,7 +3407,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewEditQueryBackground
+          @attr name com.hu.quirofano:searchViewEditQueryBackground
         */
         public static final int SherlockTheme_searchViewEditQueryBackground = 37;
         /**
@@ -3330,7 +3419,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewGoIcon
+          @attr name com.hu.quirofano:searchViewGoIcon
         */
         public static final int SherlockTheme_searchViewGoIcon = 33;
         /**
@@ -3342,7 +3431,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewSearchIcon
+          @attr name com.hu.quirofano:searchViewSearchIcon
         */
         public static final int SherlockTheme_searchViewSearchIcon = 34;
         /**
@@ -3354,7 +3443,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewTextField
+          @attr name com.hu.quirofano:searchViewTextField
         */
         public static final int SherlockTheme_searchViewTextField = 38;
         /**
@@ -3366,7 +3455,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewTextFieldRight
+          @attr name com.hu.quirofano:searchViewTextFieldRight
         */
         public static final int SherlockTheme_searchViewTextFieldRight = 39;
         /**
@@ -3378,7 +3467,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:searchViewVoiceIcon
+          @attr name com.hu.quirofano:searchViewVoiceIcon
         */
         public static final int SherlockTheme_searchViewVoiceIcon = 35;
         /**
@@ -3390,7 +3479,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:selectableItemBackground
+          @attr name com.hu.quirofano:selectableItemBackground
         */
         public static final int SherlockTheme_selectableItemBackground = 20;
         /**
@@ -3400,7 +3489,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:spinnerDropDownItemStyle
+          @attr name com.hu.quirofano:spinnerDropDownItemStyle
         */
         public static final int SherlockTheme_spinnerDropDownItemStyle = 29;
         /**
@@ -3410,7 +3499,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:spinnerItemStyle
+          @attr name com.hu.quirofano:spinnerItemStyle
         */
         public static final int SherlockTheme_spinnerItemStyle = 28;
         /**
@@ -3422,7 +3511,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceLargePopupMenu
+          @attr name com.hu.quirofano:textAppearanceLargePopupMenu
         */
         public static final int SherlockTheme_textAppearanceLargePopupMenu = 22;
         /**
@@ -3434,7 +3523,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceListItemSmall
+          @attr name com.hu.quirofano:textAppearanceListItemSmall
         */
         public static final int SherlockTheme_textAppearanceListItemSmall = 47;
         /**
@@ -3446,7 +3535,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceSearchResultSubtitle
+          @attr name com.hu.quirofano:textAppearanceSearchResultSubtitle
         */
         public static final int SherlockTheme_textAppearanceSearchResultSubtitle = 43;
         /**
@@ -3458,7 +3547,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceSearchResultTitle
+          @attr name com.hu.quirofano:textAppearanceSearchResultTitle
         */
         public static final int SherlockTheme_textAppearanceSearchResultTitle = 42;
         /**
@@ -3470,7 +3559,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceSmall
+          @attr name com.hu.quirofano:textAppearanceSmall
         */
         public static final int SherlockTheme_textAppearanceSmall = 24;
         /**
@@ -3482,7 +3571,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:textAppearanceSmallPopupMenu
+          @attr name com.hu.quirofano:textAppearanceSmallPopupMenu
         */
         public static final int SherlockTheme_textAppearanceSmallPopupMenu = 23;
         /**
@@ -3497,7 +3586,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textColorPrimary
+          @attr name com.hu.quirofano:textColorPrimary
         */
         public static final int SherlockTheme_textColorPrimary = 25;
         /**
@@ -3512,7 +3601,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textColorPrimaryDisableOnly
+          @attr name com.hu.quirofano:textColorPrimaryDisableOnly
         */
         public static final int SherlockTheme_textColorPrimaryDisableOnly = 26;
         /**
@@ -3527,7 +3616,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:textColorPrimaryInverse
+          @attr name com.hu.quirofano:textColorPrimaryInverse
         */
         public static final int SherlockTheme_textColorPrimaryInverse = 27;
         /**
@@ -3541,7 +3630,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 <p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
           <p>This is a private symbol.
-          @attr name android:textColorSearchUrl
+          @attr name com.hu.quirofano:textColorSearchUrl
         */
         public static final int SherlockTheme_textColorSearchUrl = 40;
         /**
@@ -3555,7 +3644,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowActionBar
+          @attr name com.hu.quirofano:windowActionBar
         */
         public static final int SherlockTheme_windowActionBar = 59;
         /**
@@ -3569,7 +3658,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowActionBarOverlay
+          @attr name com.hu.quirofano:windowActionBarOverlay
         */
         public static final int SherlockTheme_windowActionBarOverlay = 60;
         /**
@@ -3583,7 +3672,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowActionModeOverlay
+          @attr name com.hu.quirofano:windowActionModeOverlay
         */
         public static final int SherlockTheme_windowActionModeOverlay = 61;
         /**
@@ -3596,7 +3685,7 @@ containing a value of this type.
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
           <p>This is a private symbol.
-          @attr name android:windowContentOverlay
+          @attr name com.hu.quirofano:windowContentOverlay
         */
         public static final int SherlockTheme_windowContentOverlay = 21;
         /**
@@ -3612,7 +3701,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowMinWidthMajor
+          @attr name com.hu.quirofano:windowMinWidthMajor
         */
         public static final int SherlockTheme_windowMinWidthMajor = 48;
         /**
@@ -3628,7 +3717,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowMinWidthMinor
+          @attr name com.hu.quirofano:windowMinWidthMinor
         */
         public static final int SherlockTheme_windowMinWidthMinor = 49;
         /**
@@ -3642,7 +3731,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowNoTitle
+          @attr name com.hu.quirofano:windowNoTitle
         */
         public static final int SherlockTheme_windowNoTitle = 58;
         /**
@@ -3656,7 +3745,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:windowSplitActionBar
+          @attr name com.hu.quirofano:windowSplitActionBar
         */
         public static final int SherlockTheme_windowSplitActionBar = 62;
         /** Attributes that can be used with a SherlockView.
@@ -3665,7 +3754,7 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #SherlockView_android_focusable com.hu.quirofano:android_focusable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SherlockView_android_focusable android:focusable}</code></td><td></td></tr>
            </table>
            @see #SherlockView_android_focusable
          */
@@ -3673,9 +3762,9 @@ containing a value of this type.
             0x010100da
         };
         /**
-          <p>This symbol is the offset where the {@link com.hu.quirofano.R.attr#android_focusable}
+          <p>This symbol is the offset where the {@link android.R.attr#focusable}
           attribute's value can be found in the {@link #SherlockView} array.
-          @attr name android:android_focusable
+          @attr name android:focusable
         */
         public static final int SherlockView_android_focusable = 0;
         /** Attributes that can be used with a SlidingMenu.
@@ -3733,7 +3822,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:behindOffset
+          @attr name com.hu.quirofano:behindOffset
         */
         public static final int SlidingMenu_behindOffset = 3;
         /**
@@ -3747,7 +3836,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:behindScrollScale
+          @attr name com.hu.quirofano:behindScrollScale
         */
         public static final int SlidingMenu_behindScrollScale = 5;
         /**
@@ -3763,7 +3852,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:behindWidth
+          @attr name com.hu.quirofano:behindWidth
         */
         public static final int SlidingMenu_behindWidth = 4;
         /**
@@ -3777,7 +3866,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:fadeDegree
+          @attr name com.hu.quirofano:fadeDegree
         */
         public static final int SlidingMenu_fadeDegree = 11;
         /**
@@ -3791,7 +3880,7 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:fadeEnabled
+          @attr name com.hu.quirofano:fadeEnabled
         */
         public static final int SlidingMenu_fadeEnabled = 10;
         /**
@@ -3808,7 +3897,7 @@ containing a value of this type.
 <tr><td><code>left</code></td><td>0</td><td></td></tr>
 <tr><td><code>right</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name android:mode
+          @attr name com.hu.quirofano:mode
         */
         public static final int SlidingMenu_mode = 0;
         /**
@@ -3818,7 +3907,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:selectorDrawable
+          @attr name com.hu.quirofano:selectorDrawable
         */
         public static final int SlidingMenu_selectorDrawable = 13;
         /**
@@ -3832,7 +3921,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:selectorEnabled
+          @attr name com.hu.quirofano:selectorEnabled
         */
         public static final int SlidingMenu_selectorEnabled = 12;
         /**
@@ -3842,7 +3931,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:shadowDrawable
+          @attr name com.hu.quirofano:shadowDrawable
         */
         public static final int SlidingMenu_shadowDrawable = 8;
         /**
@@ -3858,7 +3947,7 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:shadowWidth
+          @attr name com.hu.quirofano:shadowWidth
         */
         public static final int SlidingMenu_shadowWidth = 9;
         /**
@@ -3875,7 +3964,7 @@ containing a value of this type.
 <tr><td><code>margin</code></td><td>0</td><td></td></tr>
 <tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name android:touchModeAbove
+          @attr name com.hu.quirofano:touchModeAbove
         */
         public static final int SlidingMenu_touchModeAbove = 6;
         /**
@@ -3892,7 +3981,7 @@ containing a value of this type.
 <tr><td><code>margin</code></td><td>0</td><td></td></tr>
 <tr><td><code>fullscreen</code></td><td>1</td><td></td></tr>
 </table>
-          @attr name android:touchModeBehind
+          @attr name com.hu.quirofano:touchModeBehind
         */
         public static final int SlidingMenu_touchModeBehind = 7;
         /**
@@ -3902,7 +3991,7 @@ containing a value of this type.
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:viewAbove
+          @attr name com.hu.quirofano:viewAbove
         */
         public static final int SlidingMenu_viewAbove = 1;
         /**
@@ -3912,7 +4001,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 
           <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:viewBehind
+          @attr name com.hu.quirofano:viewBehind
         */
         public static final int SlidingMenu_viewBehind = 2;
     };

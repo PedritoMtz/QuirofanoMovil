@@ -6,19 +6,24 @@
 
     <uses-sdk
         android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
+        android:targetSdkVersion="19" />
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
         
+        <!-- Se agrego android:noHistory = true para poder cerrar todos los activities, 
+        este no deja historial del activity que lo mando a llamar-->
         <activity
             android:name=".SplashActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -27,70 +32,108 @@
         
         <activity
             android:name="com.hu.quirofano.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.OptionsActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.HomeActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.QCentralActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.CAmbulatoriaActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.MainActivity2"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.Item1"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.Traumatologia"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape"
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.Contacto"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.ProgramarCirugia"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.QuirofanoCentral"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
        
         <activity
             android:name="com.hu.quirofano.ProgramarCirugiaAmbulatoria"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
         <activity
             android:name="com.hu.quirofano.ProgramarCirugiaTraumatologia"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:configChanges="screenSize|orientation"
+            android:screenOrientation="landscape" 
+            android:noHistory="true">
         </activity>
         
-                
     </application>
     
 </manifest>

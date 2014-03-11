@@ -46,9 +46,15 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Causa diferido" />
-
+				<!--  
                 <EditText
-                    android:id="@+id/causaDiferido"
+                    android:id="@+id/causa_diferido"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" /> -->
+                    
+                <!-- SPINNER IMPLEMENTADO: 19-DIC -->
+                <Spinner
+                    android:id="@+id/causa_diferido"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" />
                 

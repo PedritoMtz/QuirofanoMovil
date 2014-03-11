@@ -132,17 +132,5 @@ public class OptionsActivity extends Activity {
 						}
 					}
 				});
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}//Fin de onCreate
 }//Fin de la clase

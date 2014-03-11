@@ -25,6 +25,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:text="@string/sala_string" />
+    
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Registro" />
 
     <TextView
         android:id="@+id/pa"
@@ -39,5 +46,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:text="@string/diagnostico_string" />
+    
+    <TextView
+        android:id="@+id/procedimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Procedimiento / Cirugía" />
+    
+    <TextView
+        android:id="@+id/medico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Médico que programó" />
 
 </TableRow>

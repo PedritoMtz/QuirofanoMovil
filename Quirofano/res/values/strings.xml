@@ -14,23 +14,22 @@
 	<string name="derechos">SIGA-HU 2010. Todos los derechos reservados</string>
 	
 	<!-- OTRA ACTIVITY (OptionsActivity) -->
-	
 	<string name="options_string">OPCIONES</string>
 	<string name="home_button">Home</string>
 	<string name="q_central_button">Quirófano Central</string>
 	<string name="c_ambulatoria_button">C. ambulatoria</string>
 	<string name="traumatologia_button">Traumatología</string>
-	<string name="agendaGlobal_button">Agenda global</string>
+	<string name="agendaGlobal_button">Agenda Global</string>
 	<string name="contacto_button">Contacto</string>
-	<string name="pCirugia_button">Programar cirugía</string>
-	<string name="inspSalas_button">Inspeccionar salas</string>
+	<string name="pCirugia_button">Programar Cirugía</string>
+	<string name="inspSalas_button">Inspeccionar Salas</string>
 	
 	
 	<!-- OTRA ACTIVITY (HomeActivity)-->
 	
 	<string name="home_string">HOME</string>
 	<string name="procedimientos_string">Procedimientos en Quirófano</string>
-	<string name="agendaDia_string">Agenda del día </string>
+	<string name="agendaDia_string">Agenda del Día </string>
 		
 		<!-- STRINGS DE LA TABLA -->
 		<string name="hora_string">Hora</string>
@@ -40,11 +39,9 @@
 		
 	
 	<!-- OTRA ACTIVITY (QCentralActivity)-->
-	
-	<string name="qcentral_string">Programar cirugía</string>
+	<string name="qcentral_string">Programar Cirugía</string>
 	
 	<!-- ITEM1 -->
-	
 	<string name="item_1">Item 1</string>	
 	<string name="item_2">Item 2</string>	
 	
@@ -52,6 +49,32 @@
 	<string name="accion">Acción</string>
 	<string name="fech">Fecha</string>
 	
+	<!-- Para el add_linear que se usa en Programar Cirugía -->
+	<string name="ProcOCirPlan">Procedimiento o Cirugía Planeado</string>
+	<string name="Region">Región</string>
+	<string name="DetAdicio">Detalles Adicionales</string>
+	<string name="Servicio">Servicio</string>
 	
+	<!-- Para el xml row_agregarpersonal_dinamico -->
+	<string name="Nombre">Nombre</string>
+	<string name="Tipo">Tipo</string>
+	
+	<!-- Para el xml salas_cabecera y para el de tabla_salas_editable-->
+	<string name="Sala">Sala</string>
+	<string name="Activo">Activo</string>
+	<string name="Bloqueado">Bloqueado</string>
+	
+	<!-- Para el xml tabla_salas -->
+	<string name="ListSalas">Lista de Salas</string>
+	
+	<!-- Para todos los xml de acciones_ -->
+	<string name="Acciones">Acciones</string>
+	<string name="ModCiru">Modificar Cirugía</string>
+	<string name="CanceCiru">Cancelar Cirugía</string>
+	<string name="IniCiru">Iniciar Cirugía</string>
+	<string name="DifeCiru">Diferir Cirugía</string>
+	<string name="InfoCiru">Información de la Cirugía</string>
+	<string name="FinCiru">Finalizar Cirugía</string>
+	<string name="AddPersonal">Agregar Personal</string>
 	
 </resources>

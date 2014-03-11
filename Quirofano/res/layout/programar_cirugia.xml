@@ -61,12 +61,26 @@
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content" />
 			    -->
-                
+                <!--  OPCION NUMERO 1 DE LA APLICACION **************************************
                 <EditText
                     android:id="@+id/fecha"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" 
                     android:hint="YYYY-MM-DD" />
+                -->
+                
+                <TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text=""
+				    android:textSize="9sp"/>
+                
+                <TextView
+				    android:id="@+id/displayDate" 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text="  YYYY-MM-DD"
+				    android:textSize="18sp"/>
                 
             </LinearLayout>
 
@@ -81,12 +95,27 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Hora propuesta" />
-
+				<!-- 
                 <EditText
                     android:id="@+id/horaPropuesta"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" 
                     android:hint="HH:MM" />
+                
+                -->
+                
+                <TextView
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:text=""
+				    android:textSize="9sp"/>
+                
+                <TextView
+                    android:id="@+id/hour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:textSize="18sp"
+                    android:text="HH:MM" />
             </LinearLayout>
         </LinearLayout>
 
@@ -538,26 +567,30 @@
             android:orientation="horizontal" >
         </LinearLayout>
 
-        <Button
-            android:id="@+id/agregar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agregar" >
-        </Button>
-
-        <Button
-            android:id="@+id/eliminar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Eliminar" >
-        </Button>
+	        <Button
+	            android:id="@+id/agregar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="Agregar" >
+	        </Button>
+	
+	        <Button
+	            android:id="@+id/eliminar"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center"
+	            android:text="Eliminar" >
+	        </Button>
         
+        <!--  
         <Button
             android:id="@+id/test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TEST" >
         </Button>
+        -->
         
         <!-- BARRA SEPARADORA -->
 

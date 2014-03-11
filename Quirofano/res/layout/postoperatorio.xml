@@ -47,11 +47,19 @@
                     android:layout_height="wrap_content"
                     android:text="Salida de quirófano" />
 
+                <!--  
                 <EditText
                     android:id="@+id/salida"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" 
-                    android:hint="YYYY-MM-DD HH:MM" />
+                    android:hint="YYYY-MM-DD HH:MM" /> -->
+               
+               	<TextView
+                    android:id="@+id/hour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" 
+                    android:textSize="18sp"
+                    android:text="HH:MM" />
             </LinearLayout>
 
             <LinearLayout
@@ -180,10 +188,17 @@
                     android:layout_height="wrap_content"
                     android:text="Evento adverso" />
 
+                <Spinner
+                    android:id="@+id/eventoAdverso"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                
+                <!-- 
                 <EditText
                     android:id="@+id/eventoAdverso"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" />
+             	-->
             </LinearLayout>
 
             <LinearLayout
@@ -198,10 +213,16 @@
                     android:layout_height="wrap_content"
                     android:text="Contaminación" />
 
+                <Spinner
+                    android:id="@+id/contaminacion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <!-- 
                 <EditText
                     android:id="@+id/contaminacion"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" />
+             	-->
                 
             </LinearLayout>
 
@@ -231,10 +252,16 @@
                     android:layout_height="wrap_content"
                     android:text="Infección de sitio quirúrgico" />
 
+                <Spinner
+                    android:id="@+id/infeccion"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+                <!--  
                 <EditText
                     android:id="@+id/infeccion"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" />
+                -->
             </LinearLayout>
 
             <LinearLayout
@@ -328,12 +355,16 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Del personal que participa en esta cirugía, quienes finalizan" />
-				<!-- 
-                <EditText
-                    android:id="@+id/personal"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
-                -->
+				
+                <!-- LINEAR PARA PONER TODOS LOS CHECKBOX DINAMICAMENTE -->
+                
+                <LinearLayout
+                    android:id="@+id/checkBoxLayout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+           		</LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -360,11 +391,13 @@
                 android:orientation="vertical" >
 
 				<!-- CHECKBOX DINAMICO, AGREGARA TODO EL PERSONAL -->
+				<!--  
                 <CheckBox
                     android:id="@+id/personal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Personal" />               
+                    android:text="Personal" />         
+                    -->      
             </LinearLayout>
 
             <LinearLayout

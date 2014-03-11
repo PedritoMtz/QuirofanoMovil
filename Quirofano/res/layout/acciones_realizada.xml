@@ -13,7 +13,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_gravity="center"
 	    android:layout_marginTop="10dp"
-	    android:text="Información de la cirugía"
+	    android:text="@string/InfoCiru"
 	    android:textSize="20sp" />
 	
 	<TextView
@@ -22,7 +22,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_gravity="center"
 	    android:layout_marginTop="10dp"
-	    android:text="Acciones"
+	    android:text="@string/Acciones"
 	    android:textSize="15sp" />
 	
 	<LinearLayout

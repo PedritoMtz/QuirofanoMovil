@@ -7,7 +7,7 @@ import android.os.Handler;
 
 public class SplashActivity extends Activity{ //Inicia la clase SplashActivity
 	/*Duracion en milisegundos que durara el splash*/
-	private final int duracion_splash = 3000; /*5 Segundos*/
+	private final int duracion_splash = 3000;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState){

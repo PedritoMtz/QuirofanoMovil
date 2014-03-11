@@ -29,8 +29,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:orientation="horizontal"
-        android:stretchColumns="0,1,2,3,4" >
+        android:orientation="horizontal" 
+		android:stretchColumns="0,1,2,3,4,5,6" >
+  
 
     </TableLayout>
 

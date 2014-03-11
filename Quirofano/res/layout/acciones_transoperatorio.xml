@@ -13,7 +13,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_gravity="center"
 	    android:layout_marginTop="10dp"
-	    android:text="Acciones"
+	    android:text="@string/Acciones"
 	    android:textSize="20sp" />
 	
 	<TextView
@@ -22,7 +22,7 @@
 	    android:layout_height="wrap_content"
 	    android:layout_gravity="center"
 	    android:layout_marginTop="10dp"
-	    android:text="Acciones"
+	    android:text="@string/Acciones"
 	    android:textSize="15sp" />
 	
 	<LinearLayout
@@ -45,19 +45,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Finalizar cirugía" />
+            android:text="@string/FinCiru" />
 
 		<Button
            	android:id="@+id/agregarPersonal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Agregar Personal" />
+            android:text="@string/AddPersonal" />
 
-
-            
         <!--  
-        
         <Button
          	android:id="@+id/diferir"
             android:layout_width="match_parent"

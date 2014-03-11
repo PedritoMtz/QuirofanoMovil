@@ -31,7 +31,7 @@ public class Envio1 extends Activity {
     EditText pass; //asi esta expresado en el xml
     Button boton_Entrar;
     HttpPostAux post;
-    String IP_Server="triana.local";//IP DE NUESTRO PC
+    String IP_Server="192.168.0.5";//IP DE NUESTRO PC
     String URL_connect="http://"+IP_Server+"/androidlogin/Recibo1.php";//ruta en donde estan nuestros archivos
   
     boolean result_back;

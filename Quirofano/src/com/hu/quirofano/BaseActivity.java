@@ -26,8 +26,6 @@ import android.support.v4.app.*;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 
-
-
 public class BaseActivity extends SlidingFragmentActivity {
 	
 	private int mTitleRes;
@@ -50,10 +48,10 @@ public class BaseActivity extends SlidingFragmentActivity {
 		ft.commit();
 		
 		final SlidingMenu sm = getSlidingMenu();
-		sm.setShadowWidth(15);
+		sm.setShadowWidth(25); //originalmente 15
 		sm.setShadowDrawable(R.drawable.shadow);
-		sm.setBehindOffset(60);
-		sm.setFadeDegree(0.35f);
+		sm.setBehindOffset(280); //originalmente 60
+		sm.setFadeDegree(0.35f); //originalmente 0.35f
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		sm.setBehindCanvasTransformer(new CanvasTransformer(){
 			@TargetApi(Build.VERSION_CODES.HONEYCOMB)

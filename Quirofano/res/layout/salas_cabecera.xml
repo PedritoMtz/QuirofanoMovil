@@ -11,15 +11,15 @@
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:text="Sala" />
-    
+        android:text="@string/Sala" />
+        
     <TextView
         android:id="@+id/sala_activo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_weight="1"
-        android:text="Activo" />
+        android:text="@string/Activo" />
 
     <TextView
         android:id="@+id/sala_bloqueado"
@@ -27,6 +27,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="left"
         android:layout_weight="1"
-        android:text="Bloqueado" />
+        android:text="@string/Bloqueado"/>
 
 </TableRow>

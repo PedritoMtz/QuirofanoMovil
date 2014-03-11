@@ -69,10 +69,10 @@
 	
 	<string-array name="servicios">
 		<item>General</item>
-		<item>Bla 1</item>
-		<item>Bla 2</item>
-		<item>Bla 3</item>
-		<item>Bla 4</item>
+		<item>Cirugía</item>
+		<item>Biomédica</item>
+		<item>Medicina Interna</item>
+		<item>Ginecología y Obstetricia</item>
 	</string-array>
 	
 	<string-array name="atencionA">
@@ -101,5 +101,62 @@
 		<item>Bla 4</item>
 	</string-array>
 	
+	<!-- AGREGAR PERSONAL -->
+	
+	<string-array name="tipo_personal">
+		<item>Cirujano</item>
+		<item>Anestesista</item>
+		<item>Enfermería</item>
+		<item>Otro</item>
+	</string-array>
+	
+	<string-array name="status1">
+		<item>Ayudante</item>
+		<item>Supervisor</item>
+	</string-array>
+	
+	<string-array name="status2">
+		<item>Instrumentista</item>
+		<item>Circulante</item>
+	</string-array>
+	
+	<string-array name="status3">
+		<item>Ayudante</item>
+		<item>Supervisor</item>
+		<item>Instrumentista</item>
+		<item>Circulante</item>
+	</string-array>	
+	
+	<string-array name="turno">
+		<item>Matutino</item>
+		<item>Vespertino</item>
+		<item>Nocturno</item>
+		<item>Plan piloto</item>
+	</string-array>	
+	
+	<string-array name="clasificacion_cirugia">
+		<item>Mayor</item>
+		<item>Menor</item>
+	</string-array>
+	
+	<string-array name="evento_adverso">
+		<item>Evento adverso</item>
+		<item>Evento centinela</item>
+		<item>Nocturno</item>
+		<item>Cuasi error</item>
+	</string-array>
+	
+	<string-array name="contaminacion">
+		<item>Limpia</item>
+		<item>Limpia-contaminada</item>
+		<item>Contaminada</item>
+		<item>Sucia o infectada</item>
+	</string-array>
+	
+	<string-array name="infeccion">
+		<item>Infección de herida quirúrgica incisional superficial</item>
+		<item>infección de herida quirúrgica incisional profunda</item>
+		<item>Infección de órganos y espacios</item>
+	</string-array>
 	
 </resources>

@@ -1,44 +1,28 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="3" >
+    android:layout_gravity="left" >
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" >
-	    <TextView
-	        android:id="@+id/sala_name"
-			android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:textSize="20sp"
-	        android:text="Sala" />
-    </LinearLayout>
-	    
-	<LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" >
-	    <TextView
-	        android:id="@+id/sala_activo"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:textSize="20sp"
-	        android:text="Activo" />
-	</LinearLayout>
-	    
-	<LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1" >
-	    <TextView
-	        android:id="@+id/sala_bloqueado"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="center"
-	        android:textSize="20sp"
-	        android:text="Bloqueado" />
-	</LinearLayout>
-</LinearLayout>
+    <!-- Originalmente: Sala, Activo y Bloqueado ... Los cambio por el String -->
+    <TextView
+        android:id="@+id/sala_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/Sala"/>
+
+    <TextView
+        android:id="@+id/sala_activo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/Activo" />
+
+    <TextView
+        android:id="@+id/sala_bloqueado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="@string/Bloqueado" />
+
+</TableRow>

@@ -1,0 +1,25 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"  >
+    
+    <TextView
+        android:id="@+id/nombre_Personal"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="14sp" 
+        android:text="@string/Nombre" />
+        
+    <TextView
+        android:id="@+id/tipo_Personal"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="14sp" 
+        android:text="@string/Tipo" />
+    
+</TableRow>
+

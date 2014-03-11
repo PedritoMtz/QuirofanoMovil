@@ -1,0 +1,9 @@
+<resources>
+
+    <color name="diferido">#c40000</color>
+    <color name="atrazaada">#e52222</color>
+    <color name="transoperatorio">#d0e42b</color>
+    <color name="realizada">#add8e6</color>
+
+    
+</resources>
