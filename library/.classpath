@@ -6,5 +6,6 @@
 	<classpathentry exported="true" kind="lib" path="/home/pedro_miguel/workspace/Quirofano/libs/android-support-v4.jar"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/actionbarsherlock"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

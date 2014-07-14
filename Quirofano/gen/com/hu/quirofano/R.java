@@ -1370,32 +1370,82 @@ containing a value of this type.
     public static final class string {
         /**  Para todos los xml de acciones_ 
          */
-        public static final int Acciones=0x7f090036;
-        public static final int Activo=0x7f090033;
-        public static final int AddPersonal=0x7f09003d;
-        public static final int Bloqueado=0x7f090034;
-        public static final int CanceCiru=0x7f090038;
-        public static final int DetAdicio=0x7f09002e;
-        public static final int DifeCiru=0x7f09003a;
-        public static final int FinCiru=0x7f09003c;
-        public static final int InfoCiru=0x7f09003b;
-        public static final int IniCiru=0x7f090039;
+        public static final int Acciones=0x7f090039;
+        public static final int Activo=0x7f090036;
+        public static final int AddPersonal=0x7f090040;
+        public static final int AgGlobal=0x7f090061;
+        public static final int AgendaDía=0x7f090065;
+        public static final int AgregarProgramar=0x7f090056;
+        public static final int AtencionProgramar=0x7f090055;
+        public static final int Bloqueado=0x7f090037;
+        public static final int CanceCiru=0x7f09003b;
+        public static final int CiruCanceladas=0x7f090064;
+        public static final int CiruDiferidas=0x7f090063;
+        public static final int DetAdicio=0x7f090031;
+        public static final int DiagnosticoProgramar=0x7f09004f;
+        public static final int DifeCiru=0x7f09003d;
+        public static final int DuracionProgramar=0x7f090047;
+        public static final int EdadProgramar=0x7f09004b;
+        public static final int EliminarProgramar=0x7f090057;
+        public static final int FechaProgramar=0x7f090043;
+        public static final int FinCiru=0x7f09003f;
+        public static final int GeneroProgramar=0x7f09004c;
+        public static final int GuardarProgramar=0x7f09005e;
+        public static final int HemoderivadosProgramar=0x7f09005b;
+        public static final int HoraProgramar=0x7f090045;
+        public static final int InfoCiru=0x7f09003e;
+        public static final int IniCiru=0x7f09003c;
+        public static final int InsumosProgramar=0x7f090059;
         /**  Para el xml tabla_salas 
          */
-        public static final int ListSalas=0x7f090035;
-        public static final int ModCiru=0x7f090037;
+        public static final int ListSalas=0x7f090038;
+        public static final int Medico=0x7f090029;
+        public static final int MedicoProgramar=0x7f090054;
+        public static final int ModCiru=0x7f09003a;
+        public static final int NingunoProgramar=0x7f09005f;
         /**  Para el xml row_agregarpersonal_dinamico 
          */
-        public static final int Nombre=0x7f090030;
+        public static final int Nombre=0x7f090033;
+        public static final int NombreProgramar=0x7f09004a;
+        public static final int NomenclaFechaProgramar=0x7f090044;
+        public static final int NomenclaHoraProgramar=0x7f090046;
+        public static final int OpcionRadioProgramar1=0x7f090052;
+        public static final int OpcionRadioProgramar2=0x7f090053;
+        public static final int OtrasProgramar=0x7f09005d;
         /**  Para el add_linear que se usa en Programar Cirugía 
          */
-        public static final int ProcOCirPlan=0x7f09002c;
-        public static final int Region=0x7f09002d;
+        public static final int ProcOCirPlan=0x7f09002f;
+        public static final int ProcedenciaProgramar=0x7f09004d;
+        public static final int Procedimiento=0x7f090028;
+        public static final int ProgCirugía=0x7f090062;
+        public static final int ProtocoloProgramar=0x7f090050;
+        /**  Para el XML lista_quirofano 
+ el cual lista los quirofanos disponibles: Central, Transoperatoria, etc. 
+         */
+        public static final int QuirofaDispo=0x7f090041;
+        /**  Usados por qcentral 
+         */
+        public static final int Quirofano=0x7f090060;
+        public static final int Region=0x7f090030;
+        /**  Agregados 6/V/2014 
+         */
+        public static final int Registro=0x7f090027;
+        public static final int RegistroProgramar=0x7f090049;
+        public static final int ReintervencionProgramar=0x7f090051;
+        public static final int RequerimientosProgramar=0x7f09005a;
+        public static final int RequisitosProgramar=0x7f09005c;
+        public static final int RiesgosProgramar=0x7f090058;
         /**  Para el xml salas_cabecera y para el de tabla_salas_editable
          */
-        public static final int Sala=0x7f090032;
-        public static final int Servicio=0x7f09002f;
-        public static final int Tipo=0x7f090031;
+        public static final int Sala=0x7f090035;
+        /**  Para todos los xml de programar_cirugia 
+         */
+        public static final int SalaProgramar=0x7f090042;
+        public static final int Salas=0x7f090066;
+        public static final int Servicio=0x7f090032;
+        public static final int ServicioProgramar=0x7f09004e;
+        public static final int Tipo=0x7f090034;
+        public static final int TipoProgramacionProgramar=0x7f090048;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f090000;
@@ -1437,7 +1487,7 @@ containing a value of this type.
         public static final int abs__shareactionprovider_share_with_application=0x7f090007;
         /**  12 Noviembre 
          */
-        public static final int accion=0x7f09002a;
+        public static final int accion=0x7f09002d;
         public static final int action_settings=0x7f09000e;
         public static final int agendaDia_string=0x7f090022;
         public static final int agendaGlobal_button=0x7f09001c;
@@ -1449,7 +1499,7 @@ containing a value of this type.
         public static final int derechos=0x7f090016;
         public static final int diagnostico_string=0x7f090026;
         public static final int enter_button=0x7f090012;
-        public static final int fech=0x7f09002b;
+        public static final int fech=0x7f09002e;
         public static final int home_button=0x7f090018;
         /**  OTRA ACTIVITY (HomeActivity)
          */
@@ -1461,8 +1511,8 @@ containing a value of this type.
         public static final int inspSalas_button=0x7f09001f;
         /**  ITEM1 
          */
-        public static final int item_1=0x7f090028;
-        public static final int item_2=0x7f090029;
+        public static final int item_1=0x7f09002b;
+        public static final int item_2=0x7f09002c;
         /**  OTRA ACTIVITY (OptionsActivity) 
          */
         public static final int options_string=0x7f090017;
@@ -1473,7 +1523,7 @@ containing a value of this type.
         public static final int q_central_button=0x7f090019;
         /**  OTRA ACTIVITY (QCentralActivity)
          */
-        public static final int qcentral_string=0x7f090027;
+        public static final int qcentral_string=0x7f09002a;
         public static final int remember_cb=0x7f090011;
         public static final int sala_string=0x7f090024;
         public static final int siga_hu=0x7f090013;

@@ -18,15 +18,13 @@ import android.widget.Spinner;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class ProgramarCirugiaView extends Activity {
-
+public class ProgramarCirugiaView extends Activity 
+{
 	/*
 	 * 17 oct 
-	 * 
 	 * Las posiciones de los spinners estan dados por el entero "position"
 	 * 
 	 * 18 noviembre
-	 * 
 	 * Instanciar objeto de la clase Item1 para traer el valor de salas del respectivo quirofano
 	 * Llenar los elementos del spinner "salas" con el valor obtenido de Item1 
 	 * */
@@ -54,87 +52,35 @@ public class ProgramarCirugiaView extends Activity {
 	EditText diagnostico, nombreMedico, riesgoQuirurgico, insumos, requerimientosAnestesiologia;
 	EditText hemoderivados, requisitosLaboratorio, otrasNecesidades;
 
-	//int spin1, spin2, spin3, spin4, spin5, spin6;
 	ArrayList<Integer> spins = new ArrayList<Integer>();
 
-	//public ProgramarCirugiaView(final LayoutInflater inflater, View view, final Context context){
-//	public void onCreate(Bundle savedInstanceState) {
-//	    super.onCreate(savedInstanceState);
-//	    setContentView(R.layout.programar_cirugia);
-	
-
-	public void prog(final LayoutInflater inflater, View view, final Context context){
-//		serviciosList = Item1.nombreServicios;
-//		System.out.println("SERVICES EN VIEW = "+serviciosList);
-//		/*Spinner 1 - Salas*/
-//		salasList.add("enero");
-//		salasList.add("febrero");
-//		salasList.add("marzo");
-//		//final ObjetoSpinner obj = new ObjetoSpinner(inflater, context);
-//				
-//		Spinner sp = (Spinner) view.findViewById(R.id.salaOpciones);
-//		ArrayAdapter<CharSequence> adapter = new ArrayAdapter<CharSequence>(this,
-//		        android.R.layout.simple_spinner_item);
-//		    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//		    
-//		adapter.add("Hola");
-//		adapter.add("que hace");
-//		
-////		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-////				context, R.array.salas, android.R.layout.simple_spinner_item);
-////		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//		sp.setAdapter(adapter);
-//
-//		sp.setOnItemSelectedListener(new OnItemSelectedListener() {
-//
-//			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
-//					int position, long id) {
-//				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
-//				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
-//				parentView.getItemAtPosition(position);
-//				//spins.add(position);
-//				//Log.e("arreglo spins", "s1="+spins);
-//				Log.e("spiner1 = ", "posicion1="+position);
-//				//spin1 = position;
-//				//setSala(position);
-//				
-//				int sala=position;
-//				ProgramarCirugiaView.sala = sala;
-//				//System.out.println("sala origi="+sala);
-//				//= position;
-//			}
-//
-//			public void onNothingSelected(AdapterView<?> parentView) {
-//
-//			}
-//		});
-
+	public void prog(final LayoutInflater inflater, View view, final Context context)
+	{
 		/*Ahora para el spinner 2 - Duracion de la cirugia
 		 ************************************************** */
 		Spinner sp1 = (Spinner) view.findViewById(R.id.duracion);
+		
 		ArrayAdapter adapter1 = ArrayAdapter.createFromResource(
 				context, R.array.duraciones, android.R.layout.simple_spinner_item);
+		
 		adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		sp1.setAdapter(adapter1);
 
-		sp1.setOnItemSelectedListener(new OnItemSelectedListener() {
-
-			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
-					int position, long id) {
-				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
-				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
+		sp1.setOnItemSelectedListener(new OnItemSelectedListener()
+		{
+			public void onItemSelected(AdapterView<?> parentView, View selectedItemView
+					, int position, long id)
+			{
 				String tempo = parentView.getItemAtPosition(position).toString();
-				//spins.add(position);
-				//setDuracion(position);
 				int duracion = position;
 				ProgramarCirugiaView.duracion = tempo;
-				//duracion = position;
 			}
 
 			public void onNothingSelected(AdapterView<?> parentView) {
-
+				//Comentario
 			}
-		});
+		}); //Fin del setOnItemSelectedListener
+		
 		/*Termina el spinner 2*/
 
 		/*Ahora para el spinner 3 - Tipo de programacion
@@ -145,17 +91,11 @@ public class ProgramarCirugiaView extends Activity {
 		adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		sp2.setAdapter(adapter2);
 
-		sp2.setOnItemSelectedListener(new OnItemSelectedListener() {
-
+		sp2.setOnItemSelectedListener(new OnItemSelectedListener()
+		{
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
-					int position, long id) {
-				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
-				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
-				//parentView.getItemAtPosition(position);
-				//spins.add(position);
-				//obj.programacion = position;
-				//setProgramacion(position);
-				//programacion = position;
+					int position, long id)
+			{
 				int programacion = position;
 				ProgramarCirugiaView.programacion = programacion;
 			}
@@ -184,21 +124,8 @@ public class ProgramarCirugiaView extends Activity {
 
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
 					int position, long id) {
-				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
-				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
-				//parentView.getItemAtPosition(position);
-				//spins.add(position);
-				//Log.e("arreglo spins", "s1="+spins);
-				//Log.e("spiner1 = ", "posicion1="+position);
-				//spin1 = position;
-				//setSala(position);
-		
-				
+
 				serviciosSpinner=position;
-				//Log.e("spiner1 = ", "posicion1="+Item1.salaSpinner);
-				//ProgramarCirugiaView.sala = sala;
-				//System.out.println("sala origi="+sala);
-				//= position;
 			}
 
 			public void onNothingSelected(AdapterView<?> parentView) {
@@ -207,33 +134,6 @@ public class ProgramarCirugiaView extends Activity {
 		});
 		
 		/** FIN DE NEW SERVICIOS */
-		
-		
-//		Spinner sp3 = (Spinner) view.findViewById(R.id.servicio);
-//		ArrayAdapter adapter3 = ArrayAdapter.createFromResource(
-//				context, R.array.servicios, android.R.layout.simple_spinner_item);
-//		adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//		sp3.setAdapter(adapter3);
-//
-//		sp3.setOnItemSelectedListener(new OnItemSelectedListener() {
-//
-//			public void onItemSelected(AdapterView<?> parentView, View selectedItemView,
-//					int position, long id) {
-//				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
-//				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
-//				parentView.getItemAtPosition(position);
-//				//spins.add(position);
-//				//obj.servicio = position;
-//				//setServicio(position);
-//				//servicio = position;
-//				int servicio = position;
-//				ProgramarCirugiaView.servicio = servicio;
-//			}
-//
-//			public void onNothingSelected(AdapterView<?> parentView) {
-//
-//			}
-//		});
 		/*Termina el spinner 4*/
 
 		/*Ahora para el spinner 5 - En atencion a
@@ -251,10 +151,7 @@ public class ProgramarCirugiaView extends Activity {
 				//Toast.makeText(parentView.getContext(), "Has seleccionado " +
 				//parentView.getItemAtPosition(position).toString(), Toast.LENGTH_LONG).show();
 				parentView.getItemAtPosition(position);
-				//spins.add(position);
-				//obj.atencion = position;
-				//setAtencion(position);
-				//atencion = position;
+
 				int atencion = position;
 				ProgramarCirugiaView.atencion = atencion;
 			}
@@ -271,35 +168,7 @@ public class ProgramarCirugiaView extends Activity {
 		//Button test = (Button)view.findViewById(R.id.test);
 		vista.clear();
 		parent.removeAllViews();	//ELIMINAR LAS VISTAS DE LOS PROCEDIMIENTOS DINAMICOS
-		/*
-		test.setOnClickListener(new OnClickListener(){
 
-			@Override
-			public void onClick(View arg0) {
-				for (int index = 0; index<vista.size(); index++){
-					System.out.println(index+"####################################");
-					
-					ArrayList<String> temporary = new ArrayList<String>();
-					String servicioString = Integer.toString(vista.get(index).getServicio());
-					String regionString = Integer.toString(vista.get(index).getRegion());
-					
-					temporary.add(servicioString);
-					temporary.add(regionString);
-					temporary.add(vista.get(index).getProc());
-					temporary.add(vista.get(index).getDetalles());
-					
-					procedimientos.add(temporary);
-					
-					System.out.println(vista.get(index).getServicio());
-					System.out.println(vista.get(index).getRegion());
-					System.out.println(vista.get(index).getProc());
-					System.out.println(vista.get(index).getDetalles());
-				}
-				System.out.println("PROCEDIMIENTOS: "+procedimientos);
-				procedimientos.clear();
-
-			}});
-		*/
 //		********************************************************************+
 		final ObjectoX objeto = new ObjectoX(inflater, context);
 		System.out.println("VISTA = "+(vista.size()+1));
@@ -325,10 +194,6 @@ public class ProgramarCirugiaView extends Activity {
 		});
 		
 		Spinner servicio = (Spinner) ll.findViewById(R.id.servicio2);
-//		ArrayAdapter adapter6 = ArrayAdapter.createFromResource(
-//				context, R.array.servicios2, android.R.layout.simple_spinner_item);
-//		adapter6.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//		servicio.setAdapter(adapter6);
 		
 		ArrayAdapter<String> adapter6 = new ArrayAdapter<String>(context,
                 android.R.layout.simple_spinner_item, serviciosList);
@@ -464,6 +329,5 @@ public class ProgramarCirugiaView extends Activity {
 	public int getAtencion(){
 		return atencion;
 	}//Fin de getDuracion
-	
 	
 }/*Fin de la clase ProgramarCirugiaView*/

@@ -1352,5 +1352,4 @@ public class AccionDiferida extends SherlockFragment{
 				Toast.LENGTH_SHORT);
 		t.show();
 	}
-
 }//Fin de la clase Accion

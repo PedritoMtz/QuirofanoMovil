@@ -35,7 +35,7 @@
                     android:id="@+id/stringSala"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sala" />
+                    android:text="@string/SalaProgramar" />
 
                 <Spinner
                     android:id="@+id/salaOpciones"
@@ -53,7 +53,7 @@
                     android:id="@+id/stringFecha"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Fecha" />
+                    android:text="@string/FechaProgramar" />
 
                 
                 <!-- <DatePicker
@@ -79,7 +79,7 @@
 				    android:id="@+id/displayDate" 
 				    android:layout_width="fill_parent"
 				    android:layout_height="wrap_content"
-				    android:text="  YYYY-MM-DD"
+				    android:text="@string/NomenclaFechaProgramar"
 				    android:textSize="18sp"/>
                 
             </LinearLayout>
@@ -94,7 +94,7 @@
                     android:id="@+id/stringHoraPropuesta"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hora propuesta" />
+                    android:text="@string/HoraProgramar" />
 				<!-- 
                 <EditText
                     android:id="@+id/horaPropuesta"
@@ -115,7 +115,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" 
                     android:textSize="18sp"
-                    android:text="HH:MM" />
+                    android:text="@string/NomenclaHoraProgramar" />
             </LinearLayout>
         </LinearLayout>
 
@@ -135,7 +135,7 @@
                     android:id="@+id/stringDuracion"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Duración" />
+                    android:text="@string/DuracionProgramar" />
 
                 <Spinner
                     android:id="@+id/duracion"
@@ -153,7 +153,7 @@
                     android:id="@+id/stringTipoDeProgramacion"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Tipo de programación" />
+                    android:text="@string/TipoProgramacionProgramar" />
 
                 <Spinner
                     android:id="@+id/tipoDeProgramacion"
@@ -185,7 +185,7 @@
                     android:id="@+id/stringRegistro"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Registro" />
+                    android:text="@string/RegistroProgramar" />
 
                 <EditText
                     android:id="@+id/registro"
@@ -224,7 +224,7 @@
                     android:id="@+id/stringNombreDelPaciente"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre del paciente" />
+                    android:text="@string/NombreProgramar" />
 
                 <EditText
                     android:id="@+id/nombreDelPaciente"
@@ -263,12 +263,13 @@
                     android:id="@+id/stringEdad"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Edad" />
+                    android:text="@string/EdadProgramar" />
 
                 <EditText
                     android:id="@+id/edad"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
             </LinearLayout>
 
             <LinearLayout
@@ -281,7 +282,7 @@
                     android:id="@+id/stringGenero"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Género" />
+                    android:text="@string/GeneroProgramar" />
 
                 <EditText
                     android:id="@+id/genero"
@@ -363,8 +364,14 @@
                     android:id="@+id/stringDiagnostico"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Diagnóstico" />
+                    android:text="@string/DiagnosticoProgramar" />
 
+                <!--  Ver si implementar un AutoCompleteTextView 
+                <AutoCompleteTextView
+                	android:id="@+id/diagnostico"
+                	android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    /> -->
                 <EditText
                     android:id="@+id/diagnostico"
                     android:layout_width="fill_parent"
@@ -402,7 +409,7 @@
                     android:id="@+id/stringProtocolo"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Protocolo" />
+                    android:text="@string/ProtocoloProgramar" />
 
                 <RadioGroup
                     android:id="@+id/groupProtocolo"
@@ -415,13 +422,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="No" />
+                        android:text="@string/OpcionRadioProgramar1" />
 
                     <RadioButton
                         android:id="@+id/protocoloSi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sí" />
+                        android:text="@string/OpcionRadioProgramar2" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -435,7 +442,7 @@
                     android:id="@+id/stringReintervencion"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Reintervención" />
+                    android:text="@string/ReintervencionProgramar" />
 
                 <RadioGroup
                     android:id="@+id/groupReintervencion"
@@ -448,13 +455,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="No" />
+                        android:text="@string/OpcionRadioProgramar1" />
 
                     <RadioButton
                         android:id="@+id/reintervencionSi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Sí" />
+                        android:text="@string/OpcionRadioProgramar2" />
                 </RadioGroup>
             </LinearLayout>
 
@@ -482,7 +489,7 @@
                     android:id="@+id/stringMedico"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre del médico que programa" />
+                    android:text="@string/MedicoProgramar" />
 
                 <EditText
                     android:id="@+id/medico"
@@ -521,7 +528,7 @@
                     android:id="@+id/stringEnAtencionA"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="En atención a" />
+                    android:text="@string/AtencionProgramar" />
 
                 <Spinner
                     android:id="@+id/enAtencionA"
@@ -572,7 +579,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_gravity="center"
-	            android:text="Agregar" >
+	            android:text="@string/AgregarProgramar" >
 	        </Button>
 	
 	        <Button
@@ -580,7 +587,7 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:layout_gravity="center"
-	            android:text="Eliminar" >
+	            android:text="@string/EliminarProgramar" >
 	        </Button>
         
         <!--  
@@ -610,7 +617,7 @@
                     android:id="@+id/stringRiesgoQuirurgico"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Riesgo quirúrgico" />
+                    android:text="@string/RiesgosProgramar" />
 
                 <EditText
                     android:id="@+id/riesgoQuirurgico"
@@ -649,7 +656,7 @@
                     android:id="@+id/stringInsumosIndispensables"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Insumos indispensables" />
+                    android:text="@string/InsumosProgramar" />
 
                 <EditText
                     android:id="@+id/insumosIndispensables"
@@ -688,7 +695,7 @@
                     android:id="@+id/stringRequerimientos"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Requerimientos de anestesiología" />
+                    android:text="@string/RequerimientosProgramar" />
 
                 <EditText
                     android:id="@+id/requerimientos"
@@ -727,12 +734,13 @@
                     android:id="@+id/stringHemoderivados"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hemoderivados necesarios" />
+                    android:text="@string/HemoderivadosProgramar" />
 
                 <EditText
                     android:id="@+id/hemoderivados"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:text="@string/NingunoProgramar" />
             </LinearLayout>
 
             <LinearLayout
@@ -766,12 +774,13 @@
                     android:id="@+id/stringRequisitosDeLaboratorio"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Requisitos de laboratorio" />
+                    android:text="@string/RequisitosProgramar" />
 
                 <EditText
                     android:id="@+id/requisitosDeLaboratorio"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" 
+                    android:text="@string/NingunoProgramar" />
             </LinearLayout>
 
             <LinearLayout
@@ -805,12 +814,13 @@
                     android:id="@+id/stringOtrasNecesidades"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:text="Otras necesidades" />
+                    android:text="@string/OtrasProgramar" />
 
                 <EditText
                     android:id="@+id/otrasNecesidades"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content" 
+                    android:text="@string/NingunoProgramar"/>
             </LinearLayout>
 
             <LinearLayout
@@ -853,7 +863,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Guardar"
+                    android:text="@string/GuardarProgramar"
                     android:textSize="18sp" />
             </LinearLayout>
 

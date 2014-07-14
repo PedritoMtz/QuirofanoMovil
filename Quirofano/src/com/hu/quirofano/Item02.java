@@ -77,37 +77,41 @@ public class Item02 extends SherlockFragment {
     ArrayList<ArrayList<String>> padre = new ArrayList<ArrayList<String>>();
     ArrayList<String> nombres = new ArrayList<String>();
 	
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-		
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+	{		
 		post = new HttpPostAux();
 		
 		String val = "ok";
 //		new GetQuirofanoName(inflater, container, v).execute(val);
 		View v = inflater.inflate(R.layout.lista_quirofanos, container, false);
-		new GetQuirofanoName(inflater, container, v).execute(val);
+		new GetQuirofanoName(inflater, container, v).execute(val); //Llamamos a la clase
 		
 		ll = v.findViewById(R.id.info);
 		
 		return v;
 	}//Fin de onCreateView
 	
-	public void getQuirofanoName(String s){
+	//Función que se encarga de llamar al php para obtener los quirofanos de la BD
+	public void getNamesforBD(String s)
+	{
 		String id = "";
 		String nombre = "";
 		
 		ArrayList<NameValuePair> datosEnviar= new ArrayList<NameValuePair>();
 		datosEnviar.add(new BasicNameValuePair("stat", s));
 		
-		JSONArray jdata=post.getserverdata(datosEnviar, URL_connect);
+		JSONArray jdata = post.getserverdata(datosEnviar, URL_connect);
 		
-		System.out.println(jdata.toString());
+		System.out.println("Esto que es:"+jdata.toString());
 		System.out.println("largo de jdata = "+jdata.length());
 		
-		if (jdata!=null && jdata.length() > 0){
-    		//JSONObject json_data; //creamos un objeto JSON
-			try {
-				
-				for(int n = 0; n < jdata.length(); n++){
+		if (jdata!=null && jdata.length() > 0)
+		{
+			//JSONObject json_data; //creamos un objeto JSON
+			try
+			{
+				for(int n = 0; n < jdata.length(); n++)
+				{
 					//st.clear();
 					System.out.println("vuelta:"+n);
 					JSONObject json_data = jdata.getJSONObject(n);
@@ -124,33 +128,29 @@ public class Item02 extends SherlockFragment {
 					padre.add(temporary);
 					//st.clear();
 				}
-				
-				Log.e("array padre", "padre = "+padre);
-								
-			}
-			catch (JSONException e) {
+				Log.e("array padre", "padre = "+padre);			
+			}catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				Log.e("hi", "hi");
-			}		            
+			}         
 			//return st;
-			
     	}//Fin de if(comprueba si lo obtenido no es "null")
-    	
     	else{	//json obtenido invalido verificar parte WEB.
     		Log.e("JSON  ", "ERROR");
 	    	//return st;
 	    }
-
 	}
 	
-	class GetQuirofanoName extends AsyncTask< String, String, String> {
-		
+	class GetQuirofanoName extends AsyncTask< String, String, String> 
+	{
 		LayoutInflater inflater;
 		ViewGroup container;
 		View v;
 		
-		GetQuirofanoName(LayoutInflater inflater, ViewGroup container, View v){
+		//Constructor de la clase
+		GetQuirofanoName(LayoutInflater inflater, ViewGroup container, View v)
+		{
 			this.inflater = inflater;
 			this.container = container;
 			this.v = v;
@@ -158,36 +158,39 @@ public class Item02 extends SherlockFragment {
 		
     	String quir; //El string llevara el quirofano_name
 		
-    	protected void onPreExecute() {
+    	protected void onPreExecute()
+    	{
     		//progress = ProgressDialog.show(
     		//getActivity(), null, "Accesando a agenda...");
             super.onPreExecute();
         }
     	
-        protected String doInBackground(String... params) {
+        protected String doInBackground(String... params)
+        {
 			quir=params[0]; //String "ok" 
 			
-			getQuirofanoName(quir);//(quir);
+			getNamesforBD(quir);//Llamamos a la función
 			//Log.e("last-array", "last-array = "+al.get(0));
     		return "ok"; //login valido
     		
 		}//Fin de doInBackground
        
-        protected void onPostExecute(String resultado) {
-        	
-        	for (int i = 0; i<padre.size(); i++){
-    			
+        protected void onPostExecute(String resultado)
+        {
+        	for (int i = 0; i<padre.size(); i++)
+        	{		
     			//Guardamos en un array todos los nombres de los quirofanos para desplegarlos en la listView
     			nombres.add(padre.get(i).get(1));
     		}//Fin de for
         	
         	ListView lista = new ListView(getActivity());
         	lista.setAdapter(new ArrayAdapter<String>(getActivity(), 
-    				android.R.layout.simple_list_item_1, nombres)); 
+    				android.R.layout.simple_list_item_1, nombres));
         	
         	lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                public void onItemClick(AdapterView<?> av, View view, int i, long l) {
-                    Toast.makeText(getActivity(), "Accediste a quirófano: "+padre.get(i).get(1), Toast.LENGTH_LONG).show();
+                public void onItemClick(AdapterView<?> av, View view, int i, long l)
+                {
+                    Toast.makeText(getActivity(), "Accediste a Quirófano: "+padre.get(i).get(1), Toast.LENGTH_LONG).show();
                     
                     Fragment duedateFrag = new Item1();	
     		        Bundle bundle = new Bundle();
@@ -213,7 +216,6 @@ public class Item02 extends SherlockFragment {
     			agregarTema.setText("No hay quirófanos disponibles");
     		}
     		((LinearLayout)ll).addView(lista);
-    		
     		
 //    		OnClickListener clicks=new OnClickListener() {
 //

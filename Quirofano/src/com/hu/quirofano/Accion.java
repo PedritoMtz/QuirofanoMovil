@@ -113,8 +113,6 @@ public class Accion extends SherlockFragment{
 	
 	//Button
 	Button botonGuardar;
-
-	
 	
 	//PARA EL DATE PICKER ************************
 	static int anio;

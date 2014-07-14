@@ -36,14 +36,17 @@
 		<string name="sala_string">Sala</string>
 		<string name="paciente_string">Paciente</string>
 		<string name="diagnostico_string">Diagnóstico</string>
-		
+		<!-- Agregados 6/V/2014 -->
+		<string name="Registro">Registro</string>
+		<string name ="Procedimiento">Procedimiento / Cirugía</string>
+		<string name = "Medico">Médico que Programó</string>
 	
 	<!-- OTRA ACTIVITY (QCentralActivity)-->
 	<string name="qcentral_string">Programar Cirugía</string>
 	
 	<!-- ITEM1 -->
 	<string name="item_1">Item 1</string>	
-	<string name="item_2">Item 2</string>	
+	<string name="item_2">Item 2</string>
 	
 	<!-- 12 Noviembre -->
 	<string name="accion">Acción</string>
@@ -76,5 +79,50 @@
 	<string name="InfoCiru">Información de la Cirugía</string>
 	<string name="FinCiru">Finalizar Cirugía</string>
 	<string name="AddPersonal">Agregar Personal</string>
+	
+	<!-- Para el XML lista_quirofano -->
+	<!-- el cual lista los quirofanos disponibles: Central, Transoperatoria, etc. -->
+	<string name="QuirofaDispo">Quirofanos Disponibles</string>
+	
+	<!-- Para todos los xml de programar_cirugia -->
+	<string name="SalaProgramar">Sala</string>
+	<string name="FechaProgramar">Fecha</string>
+	<string name="NomenclaFechaProgramar">  YYYY-MM-DD</string>
+	<string name="HoraProgramar">Hora Propuesta</string>
+	<string name="NomenclaHoraProgramar">HH:MM</string>
+	<string name="DuracionProgramar">Duración</string>
+	<string name="TipoProgramacionProgramar">Tipo de Programación</string>
+	<string name="RegistroProgramar">Registro</string>
+	<string name="NombreProgramar">Nombre del Paciente</string>
+	<string name="EdadProgramar">Edad</string>
+	<string name="GeneroProgramar">Género</string>
+	<string name="ProcedenciaProgramar">Procedencia</string>
+	<string name="ServicioProgramar">Servicio</string>
+	<string name="DiagnosticoProgramar">Diagnóstico</string>
+	<string name="ProtocoloProgramar">Protocolo</string>
+	<string name="ReintervencionProgramar">Reitervención</string>
+	<string name="OpcionRadioProgramar1">No</string>
+	<string name="OpcionRadioProgramar2">Sí</string>
+	<string name="MedicoProgramar">Nombre del Médico que Programa</string>
+	<string name="AtencionProgramar">En Atención A</string>
+	<string name="AgregarProgramar">Agregar</string>
+	<string name="EliminarProgramar">Eliminar</string>
+	<string name="RiesgosProgramar">Riesgo Quirúrgico</string>
+	<string name="InsumosProgramar">Insumos Indispensables</string>
+	<string name="RequerimientosProgramar">Requerimientos de Anestesiología</string>
+	<string name="HemoderivadosProgramar">Hemoderivados Necesarios</string>
+	<string name="RequisitosProgramar">Requisitos de Laboratorio</string>
+	<string name="OtrasProgramar">Otras Necesidades</string>
+	<string name="GuardarProgramar">Guardar</string>
+	<string name="NingunoProgramar">Ninguno</string>
+	
+	<!-- Usados por qcentral -->
+	<string name ="Quirofano">Quirofano Central</string>
+	<string name ="AgGlobal">Agenda Global</string>
+	<string name ="ProgCirugía">Programar Cirugía</string>
+	<string name ="CiruDiferidas">Cirugías Diferidas</string>
+	<string name ="CiruCanceladas">Cirugías Canceladas</string>
+	<string name ="AgendaDía">Agenda del Día</string>
+	<string name ="Salas">Salas</string>
 	
 </resources>

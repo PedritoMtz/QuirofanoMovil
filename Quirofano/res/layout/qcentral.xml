@@ -4,13 +4,14 @@
     android:background="#BFE6EE"
     android:orientation="vertical" >
 
+    <!-- El campo android:text cambiaría dependiendo del quirofano que entremos -->
     <TextView
         android:id="@+id/titulo_quirofano"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="Quirófano central"
+        android:text="@string/Quirofano"
         android:textSize="20sp" />
         
     <LinearLayout
@@ -29,42 +30,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Agenda global" />
+                android:text="@string/AgGlobal" />
 
             <Button
                 android:id="@+id/pc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Programar Cirugía" />
+                android:text="@string/ProgCirugía" />
 
             <Button
                 android:id="@+id/cd"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Cirugías Diferidas" />
+                android:text="@string/CiruDiferidas" />
             
             <Button
                 android:id="@+id/cc"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Cirugías Canceladas" />
+                android:text="@string/CiruCanceladas" />
             
             <Button
                 android:id="@+id/agenda_del_dia"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Agenda del día" />
+                android:text="@string/AgendaDía" />
 
             <Button
                 android:id="@+id/salas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Salas" />
+                android:text="@string/Salas" />
         </LinearLayout>
 
         <ScrollView

@@ -60,7 +60,8 @@ public class MainActivity2 extends BaseActivity{
 	}
 
 	@Override
-	public void onCreate(Bundle savedInstanceState){
+	public void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 
 		if (savedInstanceState != null)
@@ -83,26 +84,27 @@ public class MainActivity2 extends BaseActivity{
 	}
 
 	@Override
-	public void onSaveInstanceState(Bundle outState){
+	public void onSaveInstanceState(Bundle outState)
+	{
 		super.onSaveInstanceState(outState);
 		getSupportFragmentManager().putFragment(outState, "mContent", mContent);
 	}
 
-	public void switchContent(Fragment fragment){
+	public void switchContent(Fragment fragment)
+	{
 		mContent = fragment;
 		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, fragment).commit();
 		getSlidingMenu().showContent();
 	}
 
 	//Boton de back *************************************************************
-
 	@Override
-	public boolean onKeyDown(int keyCode, KeyEvent event)  {
+	public boolean onKeyDown(int keyCode, KeyEvent event)
+	{
 		if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {
 			// no hacemos nada.
 			return true;
 		}
-
 		return super.onKeyDown(keyCode, event);
 	}
 }

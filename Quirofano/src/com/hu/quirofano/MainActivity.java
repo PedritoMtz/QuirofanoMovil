@@ -38,9 +38,9 @@ public class MainActivity extends Activity {
     CheckBox guard_checkbox;
     HttpPostAux post;
     
-    //Recordar desabilitar el firewall de ubuntu sudo ufw disable 
+    //Recordar desabilitar el firewall de ubuntu del server: sudo ufw disable 
     //String IP_Server="172.16.0.125";//IP DE NUESTRO PC
-    final static String IP_Server = "172.16.0.110";//"172.16.0.110";//"192.168.0.5";
+    final static String IP_Server = "172.16.0.150";//"172.16.0.110";//"192.168.0.4";
     String URL_connect="http://"+IP_Server+"/androidlogin/acces.php";//ruta en donde estan nuestros archivos
   
     boolean result_back;
@@ -67,11 +67,12 @@ public class MainActivity extends Activity {
         	String linea = br.readLine();
         	System.out.println(linea);
         	
-        	while (linea != null)
+        	while (linea != null) //Si encuentra un usuario guardado
         	{
         		int pos = linea.indexOf(" ")+1;
         		user.setText(linea.substring(0, pos-1));
         		pass.setText(linea.substring(pos));
+        		guard_checkbox.setChecked(true);
         		System.out.println(linea.substring(0, pos-1)+"---"+linea.substring(pos));
         		linea = br.readLine();
         	}

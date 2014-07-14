@@ -16,7 +16,7 @@ public class RandomList extends ListFragment{
 	String p= "Prueba";
 	
 	String[] list_contents = {
-		"Lista de quirófanos",
+		"Lista de Quirófanos",
 		//"Quirófano central",
 		//"Agenda del día",
 		"Contacto",
